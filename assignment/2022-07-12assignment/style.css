@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+.main{ background-color: aqua;
+    border: solid 2px red;
+    width: 80%;
+display: flex  ;
+justify-content: space-between;
+/* align-items: center; */
+color: white;
+}
+.div1{
+    border: solid 1px;
+    background-image: url(https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?cs=srgb&dl=pexels-felix-mittermeier-956981.jpg&fm=jpg);
+    font-family: 'Courier New', Courier, monospace;
+    
+    
+}
+.div2{
+    border: solid 1px;
+    background-image: url(https://images.pexels.com/photos/2387532/pexels-photo-2387532.jpeg?cs=srgb&dl=pexels-adrien-olichon-2387532.jpg&fm=jpg);
+    font-family:'Rubik Moonrocks', cursive;
+}
+.div3{
+    border: solid 1px;
+    background-image: url(https://images.pexels.com/photos/3745234/pexels-photo-3745234.jpeg?cs=srgb&dl=pexels-alex-conchillos-3745234.jpg&fm=jpg);
+    font-family: 'Roboto Mono', monospace;
+
+}
+.div4{
+    border: solid 1px;
+    background-image: url(https://images.pexels.com/photos/2763927/pexels-photo-2763927.jpeg?cs=srgb&dl=pexels-bithin-raj-2763927.jpg&fm=jpg);
+    font-family: 'Open Sans', sans-serif;
+}
+.div5{
+    border: solid 1px;
+    background-image: url(https://images.pexels.com/photos/3608311/pexels-photo-3608311.jpeg?cs=srgb&dl=pexels-emiliano-arano-3608311.jpg&fm=jpg);
+    font-family: 'Edu TAS Beginner', cursive;
+}
+.div6{
+    border: solid 1px;
+    background-image: url(https://images.pexels.com/photos/2117938/pexels-photo-2117938.jpeg?cs=srgb&dl=pexels-scott-webb-2117938.jpg&fm=jpg);
+    font-family: 'Edu QLD Beginner', cursive;
+}

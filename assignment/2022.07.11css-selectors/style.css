@@ -1,0 +1,35 @@
+/* Global/Universal Selector */
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+} 
+/* id selector */
+#main{
+background-color:black;
+}
+/* div selector */
+.main-div{
+    background-color: white ;
+    margin: 25px;
+    width: auto px;
+}
+/* style class with id */
+#main2, .main-div2{
+    border: solid 3px red;
+}
+body{
+    background-color: black;
+    color:yellow;
+}
+/* multiple selector */
+h1 , p ,li{
+    background-color: blue;
+    margin: 15px;
+    display: inline;
+}
+/* attribute selector */
+[href]{ background-color: green;
+}
+/* [target]{
+    background-color: blueviolet;
+} */

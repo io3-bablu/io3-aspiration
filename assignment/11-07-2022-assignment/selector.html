@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-selector</title>
+<style>
+    *{
+margin: 0;
+padding: 0;
+box-sizing:border-box}
+td:nth-child(2n-1){
+    background-color: rgb(198, 126, 33);}
+    .main{
+    background-color: white;
+}
+.table{
+    border: solid white 1px;
+    border-collapse: collapse;
+font-size:x-small;margin: 2px;
+
+}
+td{
+    border: solid 1px;
+    width: 40px}
+    .xyz{
+        background-color: antiquewhite;
+    }
+</style>
+</head>
+<body>
+    <div class="main">
+        <table class="table">
+        <tr>
+           <th > <br></th>
+           <th><br></th>
+           <th><br></th>
+           <th><br></th>
+           <th>2015</th >
+           <th><br> </th>
+           <th><br></th>
+           <th>2016</th>
+           <th><br></th>
+           <th><br></th>
+           <th>2017</th>
+           <th><br></th>
+        </tr>
+        <tr class="tr1">
+            <td colspan="4" class="xyz">xxx</td>
+            <td colspan="2">oxxxx</td>
+            <td class="xyz"><br></td>
+            <td colspan="2">oxxx (+0%)</td>
+            <td class="xyz"><br></td>
+            <td colspan="2">oxxxx(0%)</td> 
+        </tr>
+        <tr>
+        
+            <td colspan="4">xxxx</td>
+            <td colspan="2">oxxx</td>
+            <td><br></td>
+            <td colspan="2">oxxx (+0%)</td>
+            <td><br></td>
+            <td colspan="2">oxxx (+0%)</td>  
+        </tr>
+        <tr>
+            <td colspan="4">xxxx</td>
+            <td colspan="2">oxxx</td>
+            <td><br></td>
+            <td colspan="2">oxxx (+0%)</td>
+            <td><br></td>
+            <td colspan="2">oxxx (0%)</td>  
+        </td>  
+        </tr>
+        <tr>
+            <td colspan="4">xxxx</td>
+            <td colspan="2">0%</td>
+            <td><br></td>
+            <td colspan="2">0% (+0%)</td>
+            <td><br></td>
+            <td colspan="2">0% (0%)</td> 
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td> 
+        </tr> 
+    </table>
+    </div>
+    
+</body>
+</html>
