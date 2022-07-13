@@ -34,6 +34,7 @@
 }
 .image1 {
   float: left;
+  filter: contrast(10px);
 }
 .div2 {
   width: 33%;
