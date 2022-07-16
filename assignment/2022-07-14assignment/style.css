@@ -8,12 +8,12 @@
   background-color: rgb(232, 241, 244);
   width: 700px;
   height: 400px;
-  border: solid red 1px;
+  border: solid rgb(5, 3, 3) 1px;
   margin: 0% 10% 0% 10%;
 }
 .nav {
   background-color: white;
-  border: solid yellow 1px;
+  /* border: solid yellow 1px; */
 }
 li {
   display: inline;
@@ -33,7 +33,7 @@ li {
   margin-left: 40%;
   border: solid rgb(247, 245, 245) 0.5px;
   border-radius: 20%;
-  background-color: rgb(28, 219, 219);
+  background-color: rgb(61, 162, 193);
   display: inline;
 }
 .button1 {
@@ -43,10 +43,11 @@ li {
   text-decoration: none;
 }
 .main-div1 {
-  margin: 5px 0px 0px 50px;
+  background-color: white;
+  margin: 5px 0px 0px 48px;
   width: 150px;
   height: 150px;
-  border: solid 1px yellow;
+  /* border: solid 1px yellow; */
   text-align: center;
 }
 .div1 {
@@ -72,9 +73,97 @@ li {
   font-size: small;
 }
 .div3 {
+  text-decoration: dashed;
   margin-top: 15px;
   font-size: xx-small;
 }
 table {
   margin: 20px;
+  color: gray;
+}
+.main-div2 {
+  width: 300px;
+  height: 300px;
+  margin-top: -150px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.parag {
+  display: inline;
+  font-size: x-small;
+}
+.parag2 {
+  display: inline;
+  margin-left: 40px;
+  font-size: xx-small;
+  margin-top: -1px;
+}
+.image3 {
+  border-radius: 15px;
+  /* border: solid 1px yellow; */
+  background-color: burlywood;
+  margin-top: 5px;
+  margin-left: 10px;
+  display: inline;
+}
+.maindiv2-child {
+  background-color: white;
+  margin: 1px;
+}
+.main-div3 {
+  background-color: white;
+  margin: -300px 0px 0px 505px;
+  width: 150px;
+  height: 150px;
+}
+.para {
+  margin-top: 10px;
+  margin-left: 40px;
+  font-size: xx-small;
+}
+.img5 {
+  margin-top: -35px;
+  float: left;
+  border: solid 1px white;
+  border-radius: 20px;
+  background-color: burlywood;
+}
+.main-div4 {
+  /* background-color: white; */
+  margin: -300px 0px 0px 505px;
+  width: 150px;
+  height: 150px;
+}
+.div4 {
+  height: 70px;
+  background-color: white;
+}
+h5 {
+  margin-left: 10px;
+}
+.img6 {
+  margin-left: 10px;
+  margin-top: 15px;
+  float: left;
+  border: solid 1px white;
+  border-radius: 20px;
+  background-color: burlywood;
+}
+.para9 {
+  margin-top: 10px;
+  margin-left: 40px;
+  font-size: xx-small;
+}
+.div5 {
+  margin-top: -8px;
+  height: 70px;
+  background-color: white;
+}
+
+.button6 {
+  margin-left: 20%;
+  border: solid rgb(247, 245, 245) 0.5px;
+  border-radius: 20%;
+  background-color: rgb(61, 162, 193);
+  display: inline;
 }
