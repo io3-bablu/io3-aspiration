@@ -21,6 +21,7 @@
 .heading1 {
   line-break: anywhere;
 }
-ol {
+ol,
+ul {
   list-style-position: inside;
 }
