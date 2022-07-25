@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ddd;
+  font-family: tahoma;
+  font-size: 10px;
+}
+.main {
+  margin: 2px;
+  padding: 10px;
+}
+.main,
+.nav1,
+ul,
+li {
+  width: 100%;
+  height: 20px;
+  float: left;
+}
+
+.nav1 > ul {
+  display: flex;
+}
+.nav1 > ul > li {
+  background-color: #0a1b2d;
+  text-align: center;
+  color: #fff;
+  line-height: 20px;
+}
+.nav1 > ul > li > span {
+  color: rgb(252, 110, 110);
+}
+.nav1 > ul > li > #gold,
+#palladium {
+  color: rgb(89, 241, 89);
+}
+/* here nav2 start  */
+
+.main,
+.nav2,
+ul,
+li {
+  width: 100%;
+  height: 30px;
+  float: left;
+}
+
+.nav2 > ul {
+  display: flex;
+}
+.nav2 > ul > li {
+  background-color: #153359;
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+}
+
+.nav2 > ul > li > #gold,
+#palladium {
+  color: rgb(89, 241, 89);
+}
+.button1 {
+  margin-left: 20px;
+  width: 15px;
+  background-color: blue;
+  border-radius: 7.5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.usd {
+  margin-left: -380px;
+  cursor: pointer;
+}
+.button2 > img {
+  width: 12px;
+  height: 12px;
+  margin-left: -750px;
+  /* width: 20px; */
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.eng {
+  margin-left: -1150px;
+  cursor: pointer;
+}
+#sign-in {
+  margin-left: 200px;
+  cursor: pointer;
+}
+.button3 {
+  background-color: #153359;
+  border: solid 0.1px white;
+  color: white;
+  width: 120px;
+  height: 20px;
+  padding: 5px;
+  font-size: x-small;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  margin-right: 80px;
+}
+.button3:hover {
+  transform: scale(1.2);
+}
