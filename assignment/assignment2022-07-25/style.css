@@ -4,21 +4,19 @@
   box-sizing: border-box;
 }
 body {
+}
+.main1 {
+  height: 1000px;
   background-color: #ddd;
   font-family: tahoma;
   font-size: 10px;
 }
 .main {
   margin: 2px;
-  padding: 10px;
 }
-.main,
-.nav1,
-ul,
-li {
+.nav1ul {
   width: 100%;
   height: 20px;
-  float: left;
 }
 
 .nav1 > ul {
@@ -39,6 +37,9 @@ li {
 }
 /* here nav2 start  */
 
+.nav2 {
+  margin-top: 5px;
+}
 .main,
 .nav2,
 ul,
@@ -108,4 +109,357 @@ li {
 }
 .button3:hover {
   transform: scale(1.2);
+}
+.main,
+.nav3,
+ul,
+li {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.nav3 {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #153359;
+}
+.nav3 > ul > li,
+img {
+  margin-top: -7px;
+  margin-left: 110px;
+  border-radius: 50%;
+}
+.nav3-child2 > ul {
+  display: flex;
+  margin-right: 200px;
+}
+.nav3-child1 > ul {
+  display: flex;
+  justify-content: space-between;
+}
+.nav3-child1 {
+  margin-top: 10px;
+}
+.nav3-child2 {
+  margin-top: 10px;
+  margin-right: 90px;
+  cursor: pointer;
+}
+.gold {
+  cursor: pointer;
+}
+#nav3-span {
+  cursor: pointer;
+}
+/* nav bar end here  */
+.side-bar {
+  position: fixed;
+  left: 0;
+  top: 300px;
+}
+.main1 {
+  display: flex;
+}
+/* sidebar start here  */
+.facebook:hover {
+  transform: translateX(0%);
+  opacity: 1;
+  cursor: pointer;
+}
+.facebook {
+  z-index: 1;
+  transition: ease-in-out 1s;
+
+  transform: translateX(-82%);
+  opacity: 0;
+  background-color: blue;
+  color: white;
+  position: fixed;
+  width: 120px;
+  height: 40px;
+  top: 300px;
+  left: 0px;
+  padding: 2px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.fb {
+  margin-top: 6px;
+  font-size: x-large;
+}
+.facebook > b {
+  font-size: 18px;
+  margin-left: 5px;
+}
+.google:hover {
+  transform: translateX(0%);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.google {
+  z-index: 1;
+  transition: ease-in-out 1s;
+
+  transform: translateX(-82%);
+  opacity: 0;
+  background-color: rgb(224, 155, 43);
+  color: white;
+  position: fixed;
+  width: 120px;
+  height: 40px;
+  top: 340px;
+  left: 0px;
+  padding: 2px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.google1 {
+  margin-top: 6px;
+  font-size: x-large;
+}
+.google > b {
+  font-size: 18px;
+  margin-left: 5px;
+}
+.twitter:hover {
+  opacity: 1;
+  transform: translateX(0%);
+  cursor: pointer;
+}
+.twitter {
+  z-index: 1;
+  transition: ease-in-out 1s;
+  opacity: 0;
+  transform: translateX(-82%);
+  background-color: rgb(49, 125, 206);
+  color: white;
+  position: fixed;
+  width: 120px;
+  height: 40px;
+  top: 380px;
+  left: 0px;
+  padding: 2px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.Twitter1 {
+  margin-top: 6px;
+  font-size: x-large;
+}
+.twitter > b {
+  font-size: 18px;
+  margin-left: 5px;
+}
+.youtube:hover {
+  opacity: 1;
+  transform: translateX(0%);
+  cursor: pointer;
+}
+
+.youtube {
+  opacity: 0;
+  transform: translateX(-82%);
+  z-index: 1;
+  transition: ease-in-out 1s;
+  background-color: rgb(246, 20, 9);
+  color: white;
+  position: fixed;
+  width: 120px;
+  height: 40px;
+  top: 420px;
+  left: 0px;
+  padding: 2px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.youtube1 {
+  margin-top: 6px;
+  font-size: x-large;
+}
+.youtube > b {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.whatsapp:hover {
+  opacity: 1;
+  transform: translateX(0%);
+  cursor: pointer;
+}
+.whatsapp {
+  opacity: 0;
+  z-index: 1;
+  transform: translateX(-82%);
+  transition: ease-in-out 1s;
+  background-color: rgb(4, 209, 86);
+  color: white;
+  position: fixed;
+  width: 120px;
+  height: 40px;
+  top: 460px;
+  left: 0px;
+  padding: 2px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.whatsapp1 {
+  margin-top: 6px;
+  font-size: x-large;
+}
+.whatsapp > b {
+  font-size: 16px;
+  margin-left: 5px;
+}
+.insta:hover {
+  opacity: 1;
+  transform: translateX(0%);
+  cursor: pointer;
+}
+.insta {
+  opacity: 0;
+  transform: translateX(-82%);
+  z-index: 1;
+  transition: ease-in-out 1s;
+  background-color: rgb(214, 26, 89);
+  color: white;
+  position: fixed;
+  width: 120px;
+  height: 40px;
+  top: 500px;
+  left: 0px;
+  padding: 2px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.insta1 {
+  margin-top: 6px;
+  font-size: x-large;
+}
+.insta > b {
+  font-size: 15px;
+  margin-left: 5px;
+}
+/* clon icon start here  */
+
+.faceboo {
+  background-color: blue;
+  color: white;
+  position: fixed;
+  height: 40px;
+  top: 300px;
+  left: 0px;
+  padding: 2px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.fb1 {
+  margin-top: 6px;
+  font-size: x-large;
+  width: 23px;
+}
+.googl {
+  background-color: rgb(224, 155, 43);
+  color: white;
+  position: fixed;
+  /* width: 120px; */
+  height: 40px;
+  top: 340px;
+  left: 0px;
+  padding: 2px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.google2 {
+  margin-top: 6px;
+  font-size: x-large;
+}
+.twitte {
+  background-color: rgb(49, 125, 206);
+  color: white;
+  position: fixed;
+  /* width: 120px; */
+  height: 40px;
+  top: 380px;
+  left: 0px;
+  padding: 2px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.Twitter2 {
+  margin-top: 6px;
+  font-size: x-large;
+}
+.youtub {
+  background-color: rgb(246, 20, 9);
+  color: white;
+  position: fixed;
+  /* width: 120px; */
+  height: 40px;
+  top: 420px;
+  left: 0px;
+  padding: 2px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.youtube2 {
+  margin-top: 6px;
+  font-size: x-large;
+  width: 25px;
+}
+
+.whatsap {
+  background-color: rgb(4, 209, 86);
+  color: white;
+  position: fixed;
+  /* width: 120px; */
+  height: 40px;
+  top: 460px;
+  left: 0px;
+  padding: 2px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.whatsapp2 {
+  margin-top: 6px;
+  font-size: x-large;
+  width: 23px;
+}
+.inst {
+  background-color: rgb(214, 26, 89);
+  color: white;
+  position: fixed;
+  /* width: 120px; */
+  height: 40px;
+  top: 500px;
+  left: 0px;
+  padding: 2px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.insta2 {
+  margin-top: 6px;
+  font-size: x-large;
+  width: 23px;
+}
+.chat-icon {
+  border: solid 1px blue;
+  border-radius: 25px;
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  font-size: larger;
+  color: rgb(250, 250, 253);
+}
+.chat-icon > i {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.chat-icon:hover {
+  cursor: pointer;
 }
