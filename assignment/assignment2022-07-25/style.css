@@ -110,6 +110,7 @@ li {
 .button3:hover {
   transform: scale(1.2);
 }
+
 .main,
 .nav3,
 ul,
@@ -119,11 +120,11 @@ li {
   color: white;
 }
 .nav3 {
-  position: sticky;
-  top: 0px;
   display: flex;
   justify-content: space-between;
   background-color: #153359;
+  position: sticky !important;
+  top: 0px;
 }
 .nav3 > ul > li,
 img {
