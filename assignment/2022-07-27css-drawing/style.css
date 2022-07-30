@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 .main {
+  background-color: #f6f6f6;
   position: relative;
   height: 700px;
   width: 615px;
-  border: solid 1px red;
   margin: auto;
 }
 .upper {
@@ -20,7 +20,7 @@
   height: 55%;
   /* border: solid 1px blue; */
   border-radius: 183px;
-  background-color: white;
+  background-color: #f6f6f6;
 }
 .lower {
   position: absolute;
@@ -33,16 +33,7 @@
   display: flex;
   background-color: #87cbe2;
 }
-.div1 {
-  position: absolute;
-  top: 70%;
-  left: 10%;
-  width: 100px;
-  height: 100px;
-  border: solid 10px black;
-  border-radius: 50%;
-  z-index: 2;
-}
+
 .eyes {
   position: absolute;
   width: 100%;
