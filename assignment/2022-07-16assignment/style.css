@@ -18,6 +18,7 @@ body {
   padding-left: 20px;
 }
 .div1 {
+  z-index: 1;
   font-size: small;
   width: 150px;
   border-right: solid 0.1px black;
@@ -41,16 +42,29 @@ body {
   margin-top: 30px;
 }
 .div3 {
+  position: relative;
   width: 200px;
-  height: 350px;
-  background-color: #fff;
-  border: solid 1px;
+  height: 360px;
+  background-color: #f9f9f9;
+  /* border: solid 1px; */
   display: inline-block;
   text-decoration: none;
 }
 .img1 {
-  margin-left: -10px;
+  margin-left: -18px;
+  cursor: pointer;
 }
 h2 {
   display: inline;
+}
+.star {
+  color: goldenrod;
+}
+.star:hover {
+  transform: scale(1.2);
+  box-shadow: 2px 4px 10px 2px gray;
+}
+.rupee {
+  font-size: xx-small;
+  margin-top: 1px;
 }

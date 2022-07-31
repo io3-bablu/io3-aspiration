@@ -161,7 +161,6 @@
   position: absolute;
   top: 592px;
   left: 91px;
-  bottom: 10px;
   width: 200px;
   height: 200px;
   z-index: 1;
@@ -210,7 +209,7 @@
   position: absolute;
   top: 592px;
   left: 670px;
-  bottom: 10px;
+
   width: 200px;
   height: 200px;
   z-index: 1;
