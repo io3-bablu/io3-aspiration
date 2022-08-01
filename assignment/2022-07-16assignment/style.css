@@ -21,7 +21,7 @@ body {
   z-index: 1;
   font-size: small;
   width: 150px;
-  border-right: solid 0.1px black;
+  border-right: solid 1px gray;
 }
 .div2 {
   width: auto;
@@ -48,6 +48,9 @@ body {
   background-color: #f9f9f9;
   /* border: solid 1px; */
   display: inline-block;
+  text-decoration: none;
+}
+a {
   text-decoration: none;
 }
 .img1 {
