@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: tahoma;
+        font-weight: 100;
+      }
+      body {
+      }
+      .main1 {
+        background-color: black;
+        width: 600px;
+        height: 300px;
+        margin: 10% auto;
+        display: flex;
+      }
+      .main {
+        width: 50%;
+        height: 20px;
+        border: solid 2px yellowgreen;
+        border-radius: 10px;
+        margin-top: 20%;
+        margin-left: 20%;
+      }
+      .child {
+        width: 10px;
+        height: 100%;
+        background-color: yellowgreen;
+        animation: progress-bar;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+        border-radius: 10px;
+      }
+      @keyframes progress-bar {
+        from {
+          width: 0%;
+          background-color: yellowgreen;
+          box-shadow: 2px 0px 15px 1px yellowgreen;
+        }
+        to {
+          width: 100%;
+          box-shadow: 2px 0px 15px 1px yellowgreen;
+          border-radius: 10px;
+        }
+      }
+      H1 {
+        font-variant: small-caps;
+        margin-top: 10%;
+        margin-left: 15px;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main1">
+      <div class="main">
+        <div class="child"></div>
+        <h1>Loding GfG <span>...</span></h1>
+      </div>
+    </div>
+  </body>
+</html>
