@@ -1,0 +1,574 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.solar-system {
+  width: 550px;
+  height: 475px;
+  background-color: #f7f7f7;
+  margin: auto;
+  position: relative;
+}
+.sun > img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 40%;
+  top: 40%;
+}
+.mercury-orbet {
+  position: absolute;
+  left: 35%;
+  top: 35%;
+  width: 150px;
+  height: 150px;
+  border: dashed 0.1px blue;
+  border-radius: 50%;
+  animation: mercury 3s linear 0s infinite reverse;
+}
+
+@keyframes mercury {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  90% {
+    transform: rotate(324deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.mercury {
+  width: 30px;
+  height: 30px;
+  margin: 6px;
+  position: relative;
+  top: 0%;
+  left: 0;
+  animation: mercury-move 2s linear 0s infinite reverse;
+}
+@keyframes mercury-move {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  90% {
+    transform: rotate(324deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.venus-orbet {
+  position: absolute;
+  left: 167px;
+  top: 141px;
+  width: 200px;
+  height: 200px;
+  border: dashed 0.1px rgb(4, 3, 3);
+  border-radius: 50%;
+  animation: venus 7s linear 0s infinite;
+}
+
+@keyframes venus {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  90% {
+    transform: rotate(324deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.venus {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 6px;
+  position: relative;
+  top: 0%;
+  left: 0;
+  animation: venus-move 2s linear 0s infinite reverse;
+}
+@keyframes venus-move {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  90% {
+    transform: rotate(324deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.earth-orbet {
+  position: absolute;
+  left: 141px;
+  top: 115px;
+  width: 250px;
+  height: 250px;
+  border: dashed 1px blue;
+  border-radius: 50%;
+  animation: earth 10s linear 0s infinite reverse;
+}
+
+@keyframes earth {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  90% {
+    transform: rotate(324deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.earth {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 6px;
+  position: relative;
+  top: 0%;
+  left: 0;
+  animation: earth-move 8s linear 0s infinite reverse;
+}
+@keyframes earth-move {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  90% {
+    transform: rotate(324deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.mars-orbet {
+  position: absolute;
+  left: 116px;
+  top: 91px;
+  width: 300px;
+  height: 300px;
+  border: dashed 1px rgb(4, 1, 1);
+  border-radius: 50%;
+  animation: mars 12s linear 0s infinite reverse;
+}
+
+@keyframes mars {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  90% {
+    transform: rotate(324deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.mars {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin: 6px;
+  position: relative;
+  top: 0%;
+  left: 0;
+  animation: mars-move 8s linear 0s infinite reverse;
+}
+@keyframes mars-move {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  90% {
+    transform: rotate(324deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.jupiter-orbet {
+  position: absolute;
+  left: 92px;
+  top: 66px;
+  width: 350px;
+  height: 350px;
+  border: dashed 1px blue;
+  border-radius: 50%;
+  animation: jupiter 20s linear 0s infinite reverse;
+}
+
+@keyframes jupiter {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  90% {
+    transform: rotate(324deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.jupiter {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 6px;
+  position: relative;
+  top: 0%;
+  left: 0;
+  animation: jupiter-move 10s linear 0s infinite reverse;
+}
+@keyframes jupiter-move {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  90% {
+    transform: rotate(324deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.saturn-orbet {
+  position: absolute;
+  left: 68px;
+  top: 41px;
+  width: 400px;
+  height: 400px;
+  border: dashed 1px black;
+  border-radius: 50%;
+  animation: saturn 25s linear 0s infinite reverse;
+}
+
+@keyframes saturn {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  90% {
+    transform: rotate(324deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.saturn {
+  width: 80px;
+  height: 80px;
+  border-radius: 20%;
+  margin: 6px;
+  position: relative;
+  top: 0%;
+  left: 0;
+  animation: saturn-move 10s linear 0s infinite reverse;
+}
+@keyframes saturn-move {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  90% {
+    transform: rotate(324deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
