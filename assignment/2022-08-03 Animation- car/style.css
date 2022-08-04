@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: auto;
+  height: 100vh;
+}
+.map {
+  width: auto;
+  height: 100vh;
+  position: relative;
+}
+.car {
+  position: absolute;
+  top: 252px;
+  left: 0;
+  height: 16px;
+  width: 42px;
+  animation: car 40s ease-in-out 1s infinite normal;
+}
+@keyframes car {
+  0% {
+    left: 0%;
+    top: 40%;
+  }
+  5% {
+    left: 4%;
+    top: 40%;
+  }
+  10% {
+    transform: rotate(90deg);
+    top: 40%;
+    left: 4%;
+  }
+  15% {
+    transform: rotate(90deg);
+    top: 59%;
+    left: 4%;
+  }
+  20% {
+    transform: rotate(0deg);
+    top: 59%;
+    left: 5%;
+  }
+  25% {
+    transform: rotate(0deg);
+    top: 59%;
+    left: 19%;
+  }
+  30% {
+    transform: rotate(-90deg);
+    top: 59%;
+    left: 19%;
+  }
+  35% {
+    transform: rotate(-90deg);
+    top: 40%;
+    left: 19%;
+  }
+  40% {
+    transform: rotate(0deg);
+    top: 39%;
+    left: 19%;
+  }
+  45% {
+    transform: rotate(0deg);
+    top: 39%;
+    left: 31%;
+  }
+  50% {
+    transform: rotate(-90deg);
+    top: 39%;
+    left: 31%;
+  }
+  55% {
+    transform: rotate(-90deg);
+    top: 26%;
+    left: 31%;
+  }
+  60% {
+    transform: rotate(0deg);
+    top: 26%;
+    left: 31%;
+  }
+  65% {
+    transform: rotate(0deg);
+    top: 26%;
+    left: 45%;
+  }
+  70% {
+    transform: rotate(90deg);
+    top: 26%;
+    left: 45%;
+  }
+  75% {
+    transform: rotate(90deg);
+    top: 59%;
+    left: 45%;
+  }
+  80% {
+    transform: rotate(0deg);
+    top: 59%;
+    left: 45%;
+  }
+  85% {
+    transform: rotate(0deg);
+    top: 59%;
+    left: 71%;
+  }
+  90% {
+    transform: rotate(-90deg);
+    top: 59%;
+    left: 71%;
+  }
+  95% {
+    transform: rotate(-90deg);
+    top: 39%;
+    left: 71%;
+  }
+  97% {
+    transform: rotate(0deg);
+    top: 39%;
+    left: 71%;
+  }
+  100% {
+    transform: rotate(0deg);
+    top: 39%;
+    left: 98%;
+  }
+}
