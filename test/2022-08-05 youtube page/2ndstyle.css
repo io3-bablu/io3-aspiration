@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  position: relative;
+  width: 1217px;
+  height: 1206px;
+}
+.nav-bar {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 10%;
+  background-color: rgb(252, 251, 251);
+  z-index: 1;
+}
+.nav-bar > ul {
+  display: flex;
+  margin: 1%;
+  justify-content: space-between;
+}
+.menu {
+}
+.youtube {
+  position: absolute;
+  top: -27%;
+  left: 3%;
+}
+.search {
+  width: 24%;
+  height: 55%;
+  position: absolute;
+  top: 1%;
+  left: 30%;
+}
+.search-li {
+  position: absolute;
+  top: 1%;
+  left: 54%;
+  border: solid 0.1px;
+  width: 3%;
+  height: 55%;
+}
+
+.voice-record {
+  position: absolute;
+  top: 1%;
+  left: 57.5%;
+  width: 3%;
+  height: 60%;
+  border-radius: 50%;
+  padding: 1px;
+  background-color: rgb(247, 242, 242);
+  padding: 6px;
+}
+.notification {
+  position: absolute;
+  left: 92%;
+  top: 10%;
+}
+.button-b {
+  position: absolute;
+  top: 5%;
+  left: 96%;
+  width: 2%;
+  height: 55%;
+  background-color: #c2175b;
+  border: none;
+  border-radius: 50%;
+  color: white;
+}
+
+.creat {
+  position: absolute;
+  left: 87%;
+  border: none;
+  top: 0.2%;
+}
+li {
+  cursor: pointer;
+}
+.button-i {
+  width: 24px;
+  height: 12px;
+  background-color: #c2175b;
+  border: none;
+  border-radius: 50%;
+  color: white;
+}
+.plus {
+  position: absolute;
+  top: 77%;
+  left: 1%;
+}
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.main-video {
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  width: 68%;
+  height: 32%;
+}
+.title {
+  position: absolute;
+  top: 40%;
+  left: 7%;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.nav2 {
+  position: relative;
+  border-bottom: solid 0.1px gray;
+
+  top: 41%;
+  left: 5%;
+  width: 68%;
+  height: 5%;
+}
+.nav2 > ul {
+  display: flex;
+  margin: 1%;
+  justify-content: space-between;
+}
+.days {
+  position: absolute;
+  top: 42%;
+  left: 13%;
+}
+.views {
+  position: absolute;
+  top: 42%;
+  left: 2%;
+}
+.like {
+  position: absolute;
+  top: 42%;
+  left: 12%;
+}
+.thumb_up {
+  position: absolute;
+  top: 42%;
+  left: 47%;
+}
+.thumb_down {
+  position: absolute;
+  top: 42%;
+  left: 57%;
+}
+.share {
+  position: absolute;
+  top: 42%;
+  left: 67%;
+}
+.cut {
+  position: absolute;
+  top: 42%;
+  left: 77%;
+}
+.save {
+  position: absolute;
+  top: 42%;
+  left: 87%;
+}
+.dots {
+  position: absolute;
+  top: 42.5%;
+  left: 97%;
+}
+.channel-name {
+  left: 5%;
+  position: absolute;
+  top: 102%;
+  width: 68%;
+  height: 20%;
+  border-bottom: solid 0.1px gray;
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  margin-left: 15%;
+}
+.name > button {
+  position: absolute;
+  width: 4%;
+  height: 30%;
+  border-radius: 50%;
+  color: white;
+  background-color: #c2175b;
+  border: none;
+  top: 6%;
+  left: 10%;
+  cursor: pointer;
+}
+.name > p,
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: small;
+  cursor: pointer;
+}
+.subscribe > button {
+  margin-top: 40%;
+  margin-left: -80%;
+  background-color: red;
+  width: 150%;
+  height: 30%;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.subscribe > button:hover {
+  transform: scale(1.1);
+  border-radius: 2%;
+}
+/* comments start here  */
+.comments {
+  position: absolute;
+  top: 102%;
+  left: 0%;
+  width: 100%;
+  height: 40%;
+  border-bottom: solid 0.1px gray;
+  display: flex;
+  justify-content: space-between;
+}
+.comments > p {
+  margin-top: 2%;
+}
+.comments > span {
+  margin-right: auto;
+  margin-top: 2%;
+}
+.comments > b {
+  margin-right: 78%;
+  margin-top: 2%;
+}
+.comments1 {
+  position: absolute;
+  top: 146%;
+  left: 7%;
+  width: 92%;
+  height: 40%;
+  border-bottom: solid 0.1px gray;
+}
+.comments1 > input {
+  border: none;
+  margin-top: 3%;
+  width: 100%;
+}
+.comments1 > img {
+  width: 6%;
+  height: 85%;
+  border-radius: 50%;
+  margin: -2% 0% 0% -7%;
+}
+.side-bar {
+  position: relative;
+  top: -437%;
+  right: -39%;
+  width: 38%;
+  height: 1008%;
+  overflow-x: scroll;
+}
+.suggestion > ul {
+  display: flex;
+  justify-content: space-between;
+}
+.suggestion > ul li:nth-child(1) {
+  position: absolute;
+  width: 14%;
+  height: 2%;
+  background-color: #f2f2f2;
+  border-radius: 13px;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+}
+.suggestion > ul li:nth-child(1):hover {
+  background-color: #000;
+  color: #fff;
+}
+.suggestion > ul li:nth-child(2) {
+  top: 0%;
+  left: 16%;
+  position: absolute;
+  width: 48%;
+  height: 2%;
+  background-color: #f2f2f2;
+  border-radius: 13px;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+}
+.suggestion > ul li:nth-child(2):hover {
+  background-color: #000;
+  color: #fff;
+}
+.suggestion > ul li:nth-child(3) {
+  top: 0%;
+  left: 66%;
+  position: absolute;
+  width: 23%;
+  height: 2%;
+  background-color: #f2f2f2;
+  border-radius: 13px;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+}
+.suggestion > ul li:nth-child(3):hover {
+  background-color: #000;
+  color: #fff;
+}
+.suggestion > ul li:nth-child(4) {
+  top: 0%;
+  left: 91%;
+  position: absolute;
+  width: 45%;
+  height: 2%;
+  background-color: #f2f2f2;
+  border-radius: 13px;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+}
+.suggestion > ul li:nth-child(4):hover {
+  background-color: #000;
+  color: #fff;
+}
+.suggestion > ul li:nth-child(5) {
+  top: 0%;
+  left: 138%;
+  position: absolute;
+  width: 27%;
+  height: 2%;
+  background-color: #f2f2f2;
+  border-radius: 13px;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+}
+.suggestion > ul li:nth-child(5):hover {
+  background-color: #000;
+  color: #fff;
+}

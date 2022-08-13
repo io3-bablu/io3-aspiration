@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: tahoma;
+  font-size: 62.5%;
+}
+.container {
+  top: 38px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  width: 550px;
+  height: 500px;
+  border: solid 1px #000;
+}
+.icon {
+  position: absolute;
+  top: 6%;
+  left: 6%;
+  width: 15%;
+  height: 8%;
+  cursor: pointer;
+}
+.text1 {
+  position: absolute;
+  top: 17%;
+  left: 6%;
+  font-size: 2rem;
+}
+.text2 {
+  position: absolute;
+  top: 24%;
+  left: 6%;
+  font-size: 1.2rem;
+}
+.input1 {
+  height: 5%;
+  position: absolute;
+  top: 32%;
+  left: 6%;
+  width: 24%;
+  font-size: 1.2rem;
+  padding: 3px;
+  border: rgb(202, 198, 198) solid 0.1px;
+  border-radius: 3px;
+  box-shadow: gray 0px 0pc 2px 0px;
+}
+.input2 {
+  height: 5%;
+  position: absolute;
+  top: 32%;
+  left: 31%;
+  width: 24%;
+  font-size: 1.2rem;
+  padding: 3px;
+  border: rgb(202, 198, 198) solid 0.1px;
+  border-radius: 3px;
+  box-shadow: gray 0px 0pc 2px 0px;
+}
+.input3 {
+  height: 5%;
+  position: absolute;
+  top: 42%;
+  left: 6%;
+  width: 49%;
+  font-size: 1.2rem;
+  padding: 3px;
+  border: rgb(202, 198, 198) solid 0.1px;
+  border-radius: 3px;
+  box-shadow: grey 0px 0pc 2px 0px;
+}
+#input3 {
+  position: absolute;
+  top: 42.5%;
+  left: 42%;
+  font-size: 1.2rem;
+  cursor: default;
+}
+.text3 {
+  position: absolute;
+  top: 47%;
+  left: 7%;
+  font-size: 1.1rem;
+  cursor: default;
+}
+.input4 {
+  height: 5%;
+  position: absolute;
+  top: 55%;
+  left: 6%;
+  width: 24%;
+  font-size: 1.2rem;
+  padding: 3px;
+  border: rgb(202, 198, 198) solid 0.1px;
+  border-radius: 3px;
+  box-shadow: gray 0px 0pc 2px 0px;
+}
+.input5 {
+  height: 5%;
+  position: absolute;
+  top: 55%;
+  left: 31%;
+  width: 24%;
+  font-size: 1.2rem;
+  padding: 3px;
+  border: rgb(202, 198, 198) solid 0.1px;
+  border-radius: 3px;
+  box-shadow: gray 0px 0pc 2px 0px;
+}
+#input4 {
+  position: absolute;
+  top: 61%;
+  left: 6%;
+  font-size: 0.9rem;
+  cursor: default;
+}
+.input6 {
+  position: absolute;
+  top: 65%;
+  left: 6%;
+  width: 17px;
+  height: 17px;
+}
+label {
+  position: absolute;
+  top: 65%;
+  left: 12%;
+  font-size: 1.3rem;
+}
+.link {
+  text-decoration: none;
+  position: absolute;
+  top: 77%;
+  left: 6%;
+  font-size: 1.3rem;
+  color: #1b4fe6;
+}
+button {
+  position: absolute;
+  top: 77%;
+  left: 46%;
+  width: 55px;
+  height: 25px;
+  font-size: 1.2rem;
+  background-color: #1b4fe6;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+}
+.image2 {
+  position: absolute;
+  top: 25%;
+  left: 55%;
+  width: 46%;
+  height: 34%;
+}
+.text4 {
+  cursor: default;
+  position: absolute;
+  top: 59%;
+  left: 68%;
+  font-size: 1.1rem;
+}
