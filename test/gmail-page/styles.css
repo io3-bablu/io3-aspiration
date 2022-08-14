@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: tahoma;
+  font-size: 62.5%;
+}
+.container {
+  top: 38px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 450px;
+  border: solid 1px #000;
+}
+.icon {
+  position: absolute;
+  top: 9%;
+  left: 42%;
+  width: 19%;
+  height: 8%;
+  cursor: pointer;
+}
+.text1 {
+  position: absolute;
+  top: 19%;
+  left: 44%;
+  font-size: 1.9rem;
+}
+
+.text2 {
+  position: absolute;
+  top: 26%;
+  left: 36%;
+  font-size: 1.4rem;
+}
+.input1 {
+  padding: 2px;
+  position: absolute;
+  width: 79%;
+  height: 10%;
+  top: 37%;
+  left: 10%;
+  font-size: 1.1rem;
+  border: solid 0.5px rgb(214, 211, 211);
+  border-radius: 7px;
+}
+.link1 {
+  position: absolute;
+  top: 49%;
+  left: 11%;
+  text-decoration: none;
+  color: #284fdc;
+  font-size: 1.2rem;
+  font-family: emoji;
+}
+.text4 {
+  position: absolute;
+  top: 60%;
+  left: 11%;
+  font-size: 1.1rem;
+  color: gray;
+}
+.link2 {
+  position: absolute;
+  top: 63%;
+  left: 11%;
+  text-decoration: none;
+  color: #284fdc;
+  font-size: 1.2rem;
+  font-family: emoji;
+}
+.link3 {
+  position: absolute;
+  top: 77%;
+  left: 11%;
+  text-decoration: none;
+  color: #284fdc;
+  font-size: 1.2rem;
+  font-family: emoji;
+}
+button {
+  position: absolute;
+  top: 77%;
+  left: 73%;
+  width: 55px;
+  height: 25px;
+  font-size: 1.2rem;
+  background-color: #1b4fe6;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
