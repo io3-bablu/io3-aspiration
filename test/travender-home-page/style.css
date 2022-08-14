@@ -5,20 +5,23 @@
   font-size: 62.5%;
 }
 .main {
-  width: 1000px;
+  width: 860px;
   height: auto;
 }
-.container {
+/* first section start here */
+.container1 {
   position: relative;
   width: 100%;
   height: 500px;
   background-color: #d9d9d9;
 }
+/* box1 start here */
+
 .box1 {
   position: absolute;
   top: 30%;
-  left: 14%;
-  width: 25%;
+  left: 13%;
+  width: 29%;
   height: 60%;
   background-color: #fd633f;
   border-radius: 20px;
@@ -46,11 +49,14 @@
 .box1 > button:hover {
   background-color: #d9d9d9;
 }
+/* box1 end here */
+/* box2 start here */
+
 .box2 {
   position: absolute;
   top: 30%;
-  left: 40.5%;
-  width: 15%;
+  left: 43.5%;
+  width: 17%;
   height: 29%;
   background-color: white;
   border-radius: 20px;
@@ -60,13 +66,14 @@
   height: 100%;
   border-radius: 20px;
 }
+/* box2 end here */
+/* box3 start here */
 .box3 {
   position: absolute;
   top: 61%;
-  left: 40.5%;
-  width: 15%;
+  left: 43.5%;
+  width: 17%;
   height: 29%;
-  font-size: 2rem;
   background-color: white;
   border-radius: 20px;
 }
@@ -80,19 +87,162 @@
   text-align: start;
   font-size: 1rem;
   line-height: 1.5rem;
+  font-family: Montserrat, sans-serif !important;
 }
-.box3 > a {
+.box3 > a > b {
+  padding: 0.1rem;
   margin-left: 2rem;
-  color: #1b4fe6;
+  color: #000;
   font-size: 0.9rem;
   font-family: Montserrat, sans-serif !important;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
+  border-bottom: solid 1px black;
 }
+.box3 > a {
+  text-decoration: none;
+}
+.box3 > a > b:hover {
+  color: #1a0dab;
+  border-color: #1a0dab;
+}
+/* box3 end  here */
+/* box4 start here */
 .box4 {
   position: absolute;
   top: 30%;
-  left: 60.5%;
+  left: 62.5%;
   width: 15%;
   height: 29%;
-  border: solid 1px;
+  font-size: 2rem;
+  border-radius: 20px;
+}
+.box4 > h3 {
+  margin-top: 20%;
+  margin-left: 10%;
+}
+.box4 > p {
+  margin-top: 5%;
+  margin-left: 10%;
+  text-align: start;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: Montserrat, sans-serif !important;
+}
+.box4 > a > b {
+  padding: 0.1rem;
+  margin-left: 2rem;
+  color: #000;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  border-bottom: solid 1px black;
+  font-family: Montserrat, sans-serif !important;
+}
+.box4 > a {
+  text-decoration: none;
+}
+.box4 > a > b:hover {
+  color: #1a0dab;
+  border-color: #1a0dab;
+}
+/* box4 end here */
+/* box5 start here */
+.box5 {
+  position: absolute;
+  top: 61%;
+  left: 62.5%;
+  width: 15%;
+  height: 29%;
+  font-size: 2rem;
+  border-radius: 20px;
+}
+/* box5 end here */
+/* first section end here */
+.container2 {
+  position: relative;
+  width: 100%;
+  height: 390px;
+  background-color: #292d33;
+}
+.container2 > h3 {
+  position: absolute;
+  top: 5rem;
+  left: 23rem;
+  color: white;
+  font-size: 2rem;
+  font-family: Montserrat, sans-serif !important;
+}
+
+.container2 > p {
+  position: absolute;
+  top: 7.5rem;
+  left: 38rem;
+  color: gray;
+  font-size: 1rem;
+  font-family: Montserrat, sans-serif !important;
+}
+.box1-2 {
+  border-radius: 2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  top: 32%;
+  position: absolute;
+  width: 22%;
+  height: 38%;
+  background-color: #fd633f;
+  color: #fff;
+  left: 37%;
+}
+.box1-2 > p {
+  padding: 1rem 2rem;
+  font-family: sans-serif;
+  line-height: 1.5rem;
+}
+.box1-2 > h3 {
+  margin-top: 1.1rem;
+  font-size: 2rem;
+  font-family: cursive;
+}
+.box1-1 {
+  border-radius: 2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  top: 32%;
+  position: absolute;
+  width: 22%;
+  height: 38%;
+  background-color: #d9d9d9;
+  color: #000;
+  left: 14%;
+}
+.box1-1 > p {
+  padding: 1rem 2rem;
+  font-family: sans-serif;
+  line-height: 1.5rem;
+}
+.box1-1 > h3 {
+  margin-top: 1.1rem;
+  font-size: 2rem;
+  font-family: cursive;
+}
+.box1-3 {
+  border-radius: 2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  top: 32%;
+  position: absolute;
+  width: 22%;
+  height: 38%;
+  background-color: #d9d9d9;
+  color: #000;
+  left: 60%;
+}
+.box1-3 > p {
+  padding: 1rem 2rem;
+  font-family: sans-serif;
+  line-height: 1.5rem;
+}
+.box1-3 > h3 {
+  margin-top: 1.1rem;
+  font-size: 2rem;
+  font-family: cursive;
 }
