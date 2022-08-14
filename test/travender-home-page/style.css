@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+.main {
+  width: 1000px;
+  height: auto;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #d9d9d9;
+}
+.box1 {
+  position: absolute;
+  top: 30%;
+  left: 14%;
+  width: 25%;
+  height: 60%;
+  background-color: #fd633f;
+  border-radius: 20px;
+  font-family: Montserrat, sans-serif !important;
+}
+.box1 > p {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+.box1 > button {
+  margin-left: 7rem;
+  border-radius: 2rem;
+  width: 10rem;
+  height: 3rem;
+  background-color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  font-family: tahoma;
+  color: #fd633f;
+  cursor: pointer;
+}
+.box1 > button:hover {
+  background-color: #d9d9d9;
+}
+.box2 {
+  position: absolute;
+  top: 30%;
+  left: 40.5%;
+  width: 15%;
+  height: 29%;
+  background-color: white;
+  border-radius: 20px;
+}
+.image1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.box3 {
+  position: absolute;
+  top: 61%;
+  left: 40.5%;
+  width: 15%;
+  height: 29%;
+  font-size: 2rem;
+  background-color: white;
+  border-radius: 20px;
+}
+.box3 > h3 {
+  margin-top: 20%;
+  margin-left: 10%;
+}
+.box3 > p {
+  margin-top: 5%;
+  margin-left: 10%;
+  text-align: start;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.box3 > a {
+  margin-left: 2rem;
+  color: #1b4fe6;
+  font-size: 0.9rem;
+  font-family: Montserrat, sans-serif !important;
+  letter-spacing: 0.2rem;
+}
+.box4 {
+  position: absolute;
+  top: 30%;
+  left: 60.5%;
+  width: 15%;
+  height: 29%;
+  border: solid 1px;
+}
