@@ -78,25 +78,29 @@
   border-radius: 20px;
 }
 .box3 > h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
   margin-top: 20%;
   margin-left: 10%;
+  font-size: 1rem;
 }
 .box3 > p {
   margin-top: 5%;
   margin-left: 10%;
   text-align: start;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5rem;
   font-family: Montserrat, sans-serif !important;
 }
 .box3 > a > b {
+  position: absolute;
+  margin-top: 10%;
   padding: 0.1rem;
   margin-left: 2rem;
   color: #000;
   font-size: 0.9rem;
-  font-family: Montserrat, sans-serif !important;
   letter-spacing: 0.1rem;
   border-bottom: solid 1px black;
+  font-family: Montserrat, sans-serif !important;
 }
 .box3 > a {
   text-decoration: none;
@@ -113,22 +117,25 @@
   left: 62.5%;
   width: 15%;
   height: 29%;
-  font-size: 2rem;
   border-radius: 20px;
 }
 .box4 > h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
   margin-top: 20%;
   margin-left: 10%;
+  font-size: 1rem;
 }
 .box4 > p {
   margin-top: 5%;
   margin-left: 10%;
   text-align: start;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5rem;
   font-family: Montserrat, sans-serif !important;
 }
 .box4 > a > b {
+  position: absolute;
+  margin-top: 10%;
   padding: 0.1rem;
   margin-left: 2rem;
   color: #000;
@@ -512,6 +519,7 @@
   color: #fd633f;
   margin: 10% 0% 0% 29%;
 }
+/* section 5th start here  */
 .container5 {
   position: relative;
   width: 100%;
@@ -525,4 +533,428 @@
   font-size: 2.2rem;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+}
+.container5 > ul > li > .checkbox1 {
+  position: absolute;
+  top: 0rem;
+  left: -16%;
+  font-size: 2.2rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: #fd633f;
+}
+.container5 > ul > li:nth-child(1) {
+  position: absolute;
+  top: 9.5rem;
+  left: 19%;
+  line-height: 100%;
+  font-size: 1.7rem;
+  font-style: italic;
+  color: gray;
+  width: 35%;
+  height: 8rem;
+  font-family: "Open Sans", sans-serif;
+}
+.container5 > ul > li > .checkbox2 {
+  position: absolute;
+  top: 0rem;
+  left: -16%;
+  font-size: 2.2rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: #fd633f;
+}
+.container5 > ul > li:nth-child(2) {
+  position: absolute;
+  top: 9.5rem;
+  line-height: 100%;
+  left: 60%;
+  font-size: 1.7rem;
+  font-style: italic;
+  color: gray;
+  width: 35%;
+  height: 8rem;
+  font-family: "Open Sans", sans-serif;
+}
+.container5 > ul > li > .checkbox3 {
+  position: absolute;
+  top: 0rem;
+  left: -16%;
+  font-size: 2.2rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: #fd633f;
+}
+.container5 > ul > li:nth-child(3) {
+  position: absolute;
+  top: 20.5rem;
+  left: 19%;
+  line-height: 100%;
+  font-size: 1.7rem;
+  font-style: italic;
+  color: gray;
+  width: 35%;
+  height: 8rem;
+  font-family: "Open Sans", sans-serif;
+}
+.container5 > ul > li > .checkbox4 {
+  position: absolute;
+  top: 0rem;
+  left: -16%;
+  font-size: 2.2rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: #fd633f;
+}
+.container5 > ul > li:nth-child(4) {
+  position: absolute;
+  top: 20.5rem;
+  left: 60%;
+  font-size: 1.7rem;
+  line-height: 100%;
+  font-style: italic;
+  color: gray;
+  width: 35%;
+  height: 8rem;
+  font-family: "Open Sans", sans-serif;
+}
+.line {
+  position: relative;
+  top: 75%;
+  border-bottom: solid 1px #fd633f;
+}
+/* section 6th start here  */
+.container6 {
+  width: 100%;
+  height: 470px;
+  background-color: #333333;
+}
+.container6 > .child-div {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  background-color: #fd633f;
+}
+/* box 1st start here  */
+.box4-1 {
+  position: absolute;
+  top: -26%;
+  left: 9%;
+  width: 19%;
+  height: 15rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: rgb(134, 134, 134) 0px 0px 18px -11px;
+}
+.box4-1 > span {
+  position: absolute;
+  top: 7%;
+  left: 35%;
+  color: #fd633f;
+  font-size: xxx-large;
+}
+.box4-1 > h2 {
+  position: absolute;
+  top: 45%;
+  left: 24%;
+  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 750;
+}
+.box4-1 > p {
+  position: absolute;
+  top: 63%;
+  left: 8%;
+  font-size: 1rem;
+  color: #fd633f;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+}
+/* box 1st end here  */
+/* box 2nd start here  */
+.box4-2 {
+  position: absolute;
+  top: -26%;
+  left: 30%;
+  width: 19%;
+  height: 15rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: rgb(134, 134, 134) 0px 0px 18px -11px;
+}
+.box4-2 > span {
+  position: absolute;
+  top: 7%;
+  left: 35%;
+  color: #fd633f;
+  font-size: xxx-large;
+}
+.box4-2 > h2 {
+  position: absolute;
+  top: 45%;
+  left: 24%;
+  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 750;
+}
+.box4-2 > a {
+  position: absolute;
+  top: 63%;
+  left: 40%;
+  font-size: 1rem;
+  color: #fd633f;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+/* box 2nd end here  */
+/* box 3rd start here  */
+.box4-3 {
+  position: absolute;
+  top: -26%;
+  left: 51%;
+  width: 19%;
+  height: 15rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: rgb(134, 134, 134) 0px 0px 18px -11px;
+}
+
+.box4-3 > span {
+  position: absolute;
+  top: 7%;
+  left: 35%;
+  color: #fd633f;
+  font-size: xxx-large;
+}
+.box4-3 > h2 {
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 750;
+}
+.box4-3 > a {
+  position: absolute;
+  top: 63%;
+  left: 26%;
+  font-size: 1rem;
+  color: #fd633f;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+/* box 3rd end here  */
+/* box 4th start here  */
+.box4-4 {
+  position: absolute;
+  top: -26%;
+  left: 72%;
+  width: 19%;
+  height: 15rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: rgb(134, 134, 134) 0px 0px 18px -11px;
+}
+
+.box4-4 > span {
+  position: absolute;
+  top: 7%;
+  left: 35%;
+  color: #fd633f;
+  font-size: xxx-large;
+}
+.box4-4 > h2 {
+  position: absolute;
+  top: 45%;
+  left: 16%;
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 750;
+}
+.box4-4 > a {
+  position: absolute;
+  top: 63%;
+  left: 25%;
+  font-size: 1rem;
+  color: #fd633f;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+/* box 4th end here  */
+/* section 6th end here  */
+/* input start here  */
+.input-box1 {
+  position: relative;
+  left: 11%;
+  top: 35%;
+  width: 20rem;
+}
+.border1 {
+  position: absolute;
+  width: 70%;
+  top: 10px;
+  border-bottom: solid 1px #fff;
+}
+.input1 {
+  background: none;
+  position: absolute;
+  width: 70%;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  border: none;
+}
+
+.input1-text {
+  position: absolute;
+  left: 5%;
+  top: -5px;
+  font-size: 1.5rem;
+  color: #f4f4fa;
+  pointer-events: none;
+}
+
+.input1:focus ~ .input1-text,
+.input1:valid ~ .input1-text {
+  color: rgb(87, 227, 227);
+  transform: translateY(-10px);
+}
+/* input 2nd */
+.input-box2 {
+  position: relative;
+  left: 31%;
+  top: 35%;
+  width: 20rem;
+}
+.border2 {
+  position: absolute;
+  width: 70%;
+  top: 10px;
+  border-bottom: solid 1px #fff;
+}
+.input2 {
+  background: none;
+  position: absolute;
+  width: 70%;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  border: none;
+}
+
+.input2-text {
+  position: absolute;
+  left: 5%;
+  top: -5px;
+  font-size: 1.5rem;
+  color: #f4f4fa;
+  pointer-events: none;
+}
+
+.input2:focus ~ .input2-text,
+.input2:valid ~ .input2-text {
+  color: rgb(87, 227, 227);
+  transform: translateY(-10px);
+}
+/* input 3rd */
+.input-box3 {
+  position: relative;
+  left: 10.5%;
+  top: 55%;
+  width: 45rem;
+}
+.border3 {
+  position: absolute;
+  width: 70%;
+  top: 10px;
+  border-bottom: solid 1px #fff;
+}
+.input3 {
+  background: none;
+  position: absolute;
+  width: 70%;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  border: none;
+}
+
+.input3-text {
+  position: absolute;
+  left: 2%;
+  top: -5px;
+  font-size: 1.5rem;
+  color: #f4f4fa;
+  pointer-events: none;
+}
+
+.input3:focus ~ .input3-text,
+.input3:valid ~ .input3-text {
+  color: rgb(87, 227, 227);
+  transform: translateY(-10px);
+}
+.submit-button {
+  position: absolute;
+  top: 63%;
+  left: 102px;
+  width: 34%;
+  height: 3rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border: none;
+  color: #fd633f;
+  cursor: pointer;
+}
+.submit-button:hover {
+  background-color: #f2ccc3;
+}
+.h1-icon {
+  position: relative;
+  top: 40%;
+  left: 58%;
+}
+.h1-icon > h1 {
+  position: absolute;
+  font-size: 3rem;
+  color: #d9d9d9;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.facebook {
+  position: absolute;
+  top: 6rem;
+  left: 3%;
+  font-size: 2rem;
+  color: #d9d9d9;
+  cursor: pointer;
+}
+.twitter {
+  position: absolute;
+  top: 6rem;
+  left: 7%;
+  font-size: 2rem;
+  color: #d9d9d9;
+  cursor: pointer;
+}
+.insta {
+  position: absolute;
+  top: 6rem;
+  left: 11%;
+  font-size: 2rem;
+  color: #d9d9d9;
+  cursor: pointer;
+}
+.link-in {
+  position: absolute;
+  top: 6rem;
+  left: 15%;
+  font-size: 2rem;
+  color: #d9d9d9;
+  cursor: pointer;
 }
