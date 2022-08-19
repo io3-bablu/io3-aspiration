@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display-grid</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: gray;
+        display: grid;
+        width: 500px;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        grid-template-columns: repeat(2, 1fr) 2fr 1fr;
+        padding: 5px;
+        grid-template-rows: 1fr 0.5fr 2fr 4fr;
+        margin: auto;
+        padding: 20px;
+      }
+      .child1 {
+        background-color: aqua;
+        height: 60px;
+        border-radius: 4px;
+        grid-column: 1/-1;
+      }
+      .child2 {
+        text-align: center;
+        background-color: aqua;
+        border-radius: 4px;
+        grid-column: 1/-1;
+      }
+      .child3 {
+        background-color: aqua;
+        border-radius: 4px;
+        grid-column: 1/-1;
+        text-align: center;
+      }
+      .child4 {
+        background-color: aqua;
+        border-radius: 4px;
+        grid-row: 4/7;
+        text-align: center;
+      }
+      .child5 {
+        background-color: aqua;
+        border-radius: 4px;
+        grid-row: 4/7;
+        grid-column: 2/-1;
+        text-align: center;
+      }
+      .child6 {
+        background-color: aqua;
+        border-radius: 4px;
+        grid-column: 1/-1;
+        height: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child1">logo</div>
+      <div class="child2">navigation bar</div>
+      <div class="child3">header/banner</div>
+      <div class="child4">side-bar</div>
+      <div class="child5">main body</div>
+      <div class="child6">footer</div>
+    </div>
+  </body>
+</html>

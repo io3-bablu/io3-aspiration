@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display-grid</title>
+    <style>
+      .container {
+        display: grid;
+        background-color: gray;
+        margin: auto;
+        width: 500px;
+        padding: 20px;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 2fr 1.5fr 4fr 0.7fr;
+      }
+      /* container ends here  */
+      .child1 {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: aqua;
+        height: 50px;
+        grid-column: 1/-1;
+        border-radius: 5px;
+      }
+      .child2 {
+        text-align: center;
+        padding: 50px 0px 0px 0px;
+        background-color: aqua;
+        grid-column: 1/-1;
+        border-radius: 5px;
+      }
+      .child3 {
+        background-color: aqua;
+        grid-column: 1/-1;
+        border-radius: 5px;
+        text-align: center;
+        padding: 20px 0px 0px 0px;
+      }
+      .child4 {
+        background-color: aqua;
+        border-radius: 5px;
+        text-align: center;
+        padding: 80px 0px 0px 0px;
+      }
+      .child5 {
+        background-color: aqua;
+        border-radius: 5px;
+        text-align: center;
+        padding: 80px 0px 0px 0px;
+      }
+      .child6 {
+        background-color: aqua;
+        border-radius: 5px;
+        text-align: center;
+        padding: 80px 0px 0px 0px;
+      }
+      .child7 {
+        background-color: aqua;
+        border-radius: 5px;
+        grid-column: 1/-1;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child1">
+        <h1>LOGO</h1>
+        <h6>NAVIGATION</h6>
+      </div>
+      <div class="child2">header/banner</div>
+      <div class="child3"><h4>intro-text-area</h4></div>
+      <div class="child4">Box-1</div>
+      <div class="child5">Box-2</div>
+      <div class="child6">Box-3</div>
+      <div class="child7">Footer</div>
+    </div>
+  </body>
+</html>
