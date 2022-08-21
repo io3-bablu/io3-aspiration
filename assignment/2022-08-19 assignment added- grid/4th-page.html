@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display-grid</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 550px;
+        margin: auto;
+        padding: 5px;
+        background-color: gray;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr repeat(4, 2fr) 3fr 1fr;
+        grid-gap: 5px;
+      }
+      .child1 {
+        background-color: aqua;
+        grid-column: 1/-1;
+        height: 50px;
+      }
+      .child2 {
+        background-color: aqua;
+        margin: 10px;
+      }
+      .child3 {
+        background-color: aqua;
+        margin: 10px;
+      }
+      .child4 {
+        margin: 10px;
+        background-color: aqua;
+      }
+      .child5 {
+        margin: 10px;
+        background-color: aqua;
+      }
+      .child6 {
+        margin: 10px;
+        background-color: aqua;
+      }
+      .child7 {
+        margin: 10px;
+        background-color: aqua;
+      }
+      .child8 {
+        margin: 10px;
+        background-color: aqua;
+      }
+      .child9 {
+        margin: 10px;
+        background-color: aqua;
+      }
+      .child10 {
+        margin: 10px;
+        background-color: aqua;
+      }
+      .child11 {
+        margin: 10px;
+        background-color: aqua;
+      }
+      .child12 {
+        margin: 10px;
+        background-color: aqua;
+      }
+      .child13 {
+        margin: 10px;
+        background-color: aqua;
+      }
+      .child14 {
+        margin: 10px;
+        background-color: aqua;
+      }
+      .child15 {
+        margin: 5px;
+        background-color: aqua;
+      }
+      .child16 {
+        margin: 10px;
+        background-color: aqua;
+      }
+      .child17 {
+        grid-column: 1/-1;
+        background-color: aqua;
+      }
+      .child18 {
+        background-color: aqua;
+      }
+      .child19 {
+        background-color: aqua;
+      }
+      .child20 {
+        background-color: aqua;
+      }
+      .child21 {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child1">1</div>
+      <div class="child2">2</div>
+      <div class="child3">3</div>
+      <div class="child4">4</div>
+      <div class="child5">5</div>
+      <div class="child6">6</div>
+      <div class="child7">7</div>
+      <div class="child8">8</div>
+      <div class="child9">9</div>
+      <div class="child10">10</div>
+      <div class="child11">11</div>
+      <div class="child12">12</div>
+      <div class="child10">13</div>
+      <div class="child11">14</div>
+      <div class="child12">15</div>
+      <div class="child10">16</div>
+      <div class="child11">17</div>
+      <div class="child12">18</div>
+      <div class="child10">19</div>
+      <div class="child11">20</div>
+      <div class="child12">21</div>
+    </div>
+  </body>
+</html>

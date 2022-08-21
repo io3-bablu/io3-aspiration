@@ -6,17 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>display-grid</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       .container {
+        text-align: center;
         display: grid;
         background-color: gray;
         margin: auto;
-        width: 500px;
+        width: 700px;
         padding: 20px;
         grid-column-gap: 10px;
         grid-row-gap: 5px;
-
+        border-radius: 5px;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: 1fr 1.5fr repeat(4, 1fr) 0.5fr;
       }
       /* container ends here  */
       .child1 {
@@ -29,54 +35,31 @@
         border-radius: 5px;
       }
       .child2 {
-        background-color: aqua;
+        grid-row: 2/7;
       }
       .child3 {
         background-color: aqua;
+        grid-column: 2/-1;
       }
       .child4 {
         background-color: aqua;
+        grid-column: 2/-1;
+        grid-row: 3/7;
+        margin: 5px 0px 5px 0px;
       }
       .child5 {
         background-color: aqua;
-      }
-      .child6 {
-        background-color: aqua;
-      }
-      .child7 {
-        background-color: aqua;
-      }
-      .child8 {
-        background-color: aqua;
-      }
-      .child9 {
-        background-color: aqua;
-      }
-      .child10 {
-        background-color: aqua;
-      }
-      .child11 {
-        background-color: aqua;
-      }
-      .child12 {
-        background-color: aqua;
+        grid-column: 1/-1;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="child1">1</div>
-      <div class="child2">2</div>
-      <div class="child3">3</div>
-      <div class="child4">4</div>
-      <div class="child5">5</div>
-      <div class="child6">6</div>
-      <div class="child7">7</div>
-      <div class="child8">8</div>
-      <div class="child9">9</div>
-      <div class="child10">10</div>
-      <div class="child11">11</div>
-      <div class="child12">12</div>
+      <div class="child1"><h1>LOGO</h1></div>
+      <div class="child2">side-bar/navigation</div>
+      <div class="child3">header/banner</div>
+      <div class="child4">body-area</div>
+      <div class="child5">footer</div>
     </div>
   </body>
 </html>
