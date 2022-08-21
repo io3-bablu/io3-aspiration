@@ -34,42 +34,116 @@
   left: 6%;
   font-size: 1.2rem;
 }
-.input1 {
+/* input1 starts here  */
+
+.input1-div {
   height: 5%;
-  position: absolute;
+  position: relative;
   top: 32%;
   left: 6%;
   width: 24%;
-  font-size: 1.2rem;
+  border-radius: 3px;
+  box-shadow: gray 0px 0pc 2px 0px;
+}
+.input1 {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  font-size: 0.8rem;
   padding: 3px;
   border: rgb(202, 198, 198) solid 0.1px;
   border-radius: 3px;
   box-shadow: gray 0px 0pc 2px 0px;
+}
+.First-name {
+  margin: 2px;
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  font-size: 1rem;
+  pointer-events: none;
+}
+.input1:focus ~ .First-name,
+.input1:valid ~ .First-name {
+  transform: translateY(-10px);
+  background-color: #fff;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  color: #1b4fe6;
+}
+
+/* input1 ends here  */
+/* input2 start here  */
+.input2-div {
+  position: relative;
+  top: 32%;
+  left: 7%;
+  height: 5%;
+  width: 24%;
 }
 .input2 {
-  height: 5%;
+  height: 100%;
   position: absolute;
-  top: 32%;
-  left: 31%;
-  width: 24%;
-  font-size: 1.2rem;
+  width: 100%;
+  font-size: 0.8rem;
   padding: 3px;
   border: rgb(202, 198, 198) solid 0.1px;
   border-radius: 3px;
   box-shadow: gray 0px 0pc 2px 0px;
 }
-.input3 {
-  height: 5%;
+.Last-name {
+  margin: 2px;
   position: absolute;
+  top: 3px;
+  left: 2px;
+  font-size: 1rem;
+  pointer-events: none;
+}
+.input2:focus ~ .Last-name,
+.input2:valid ~ .Last-name {
+  transform: translateY(-10px);
+  background-color: #fff;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  color: #1b4fe6;
+}
+/* input2 ends here  */
+/* input3 start here  */
+.input3-div {
+  position: relative;
   top: 42%;
-  left: 6%;
+  left: -42%;
+  height: 5%;
   width: 49%;
-  font-size: 1.2rem;
+}
+.input3 {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  font-size: 0.8rem;
   padding: 3px;
   border: rgb(202, 198, 198) solid 0.1px;
   border-radius: 3px;
-  box-shadow: grey 0px 0pc 2px 0px;
+  box-shadow: gray 0px 0pc 2px 0px;
 }
+.Username {
+  margin: 2px;
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  font-size: 1rem;
+  pointer-events: none;
+}
+.input3:focus ~ .Username,
+.input3:valid ~ .Username {
+  transform: translateY(-10px);
+  background-color: #fff;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  color: #1b4fe6;
+}
+/* input3 ends here  */
+
 #input3 {
   position: absolute;
   top: 42.5%;
@@ -77,6 +151,7 @@
   font-size: 1.2rem;
   cursor: default;
 }
+
 .text3 {
   position: absolute;
   top: 47%;

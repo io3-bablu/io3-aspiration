@@ -12,7 +12,7 @@
         box-sizing: border-box;
       }
       .container {
-        width: 550px;
+        width: 1550px;
         margin: auto;
         padding: 5px;
         background-color: gray;
@@ -22,9 +22,10 @@
         grid-gap: 5px;
       }
       .child1 {
+        margin: 0px 10px 0px 10px;
         background-color: aqua;
         grid-column: 1/-1;
-        height: 50px;
+        height: 150px;
       }
       .child2 {
         background-color: aqua;
@@ -87,19 +88,29 @@
         background-color: aqua;
       }
       .child17 {
-        grid-column: 1/-1;
+        margin: 10px;
+
         background-color: aqua;
       }
       .child18 {
-        background-color: aqua;
+        grid-column: 1/-1;
+        background-color: gray;
+        display: grid;
+        padding: 10px;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
       }
       .child19 {
+        grid-column: 1/-1;
         background-color: aqua;
       }
-      .child20 {
+      .child18-1 {
         background-color: aqua;
       }
-      .child21 {
+      .child18-2 {
+        background-color: aqua;
+      }
+      .child18-3 {
         background-color: aqua;
       }
     </style>
@@ -118,15 +129,17 @@
       <div class="child10">10</div>
       <div class="child11">11</div>
       <div class="child12">12</div>
-      <div class="child10">13</div>
-      <div class="child11">14</div>
-      <div class="child12">15</div>
-      <div class="child10">16</div>
-      <div class="child11">17</div>
-      <div class="child12">18</div>
-      <div class="child10">19</div>
-      <div class="child11">20</div>
-      <div class="child12">21</div>
+      <div class="child13">13</div>
+      <div class="child14">14</div>
+      <div class="child15">15</div>
+      <div class="child16">16</div>
+      <div class="child17">17</div>
+      <div class="child18">
+        <div class="child18-1"></div>
+        <div class="child18-2"></div>
+        <div class="child18-3"></div>
+      </div>
+      <div class="child19">19</div>
     </div>
   </body>
 </html>
