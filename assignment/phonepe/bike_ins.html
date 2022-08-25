@@ -236,18 +236,20 @@
     }
     .icon-phone{
       position: absolute;
-    top: 8%;
-    left: 9px;
-    width: 17%;
-    height: 84%;
-
-    }
+    top: 17%;
+    left: 19px;
+    width: 12%;
+    height: 66%;
+}
     .icon-email{
       position: absolute;
-    top: 21.5%;
-    left: 5%;
-    width: 14%;
-    height: 59%;
+    top: 23.5%;
+    left: 9%;
+    width: 11%;
+    height: 54%;
+    }
+    #page2{
+      height: auto !important;
     }
       /* meadia quaries for tab */
       @media screen and (max-width: 768px) {
@@ -497,10 +499,10 @@
           </div>
           <div class="details_content">
             <div class="intro_content">
-              <h3>Dear <span>[customerName],</span></h3>
+              <h3>Dear <span>{{customerName}},</span></h3>
               <p> 
                 Thank you for choosing our platform for your two-wheeler insurance needs. <br>
-              You are now secured with [Plan-Name], which shields you againt  unforeseen <br>incidentson the road.
+              You are now secured with {{Plan-Name}}, which shields you againt  unforeseen <br>incidentson the road.
                 due to untoward incidents on the road.
               </p>
               <p>
@@ -525,11 +527,11 @@
                 <table>
                   <tr>
                      <td style="border-top-left-radius:1rem;">Vehicle Registration No.</td>
-                    <td style="border-top-right-radius:1rem;">[vehicle Registration No]</td>
+                    <td style="border-top-right-radius:1rem;">{{vehicleRegistrationNo}}</td>
                   </tr>
                   <tr>
                   <td style="border-bottom-left-radius:1rem;">Make/Model</td>
-                 <td style="border-bottom-right-radius:1rem;">[make/Model]</td>
+                 <td style="border-bottom-right-radius:1rem;">{{makeModel}}</td>
                   </tr>
                 </table>
               </div>
@@ -541,15 +543,15 @@
                 <table>
                   <tr>
                     <td style="border-top-left-radius:1rem;">Policy Number</td>
-                    <td style="border-top-right-radius:1rem;">[policy Number]</td>
+                    <td style="border-top-right-radius:1rem;">{{policyNumber}}</td>
                   </tr>
                   <tr>
                     <td>Policy Period</td>
-                    <td>[Period of Insurance]</td>
+                    <td>{{Period of Insurance}}</td>
                   </tr>
                   <tr>
                     <td style="border-bottom-left-radius:1rem;">Premium Paid</td>
-                    <td style="border-bottom-right-radius:1rem;">[premium Paid]</td>
+                    <td style="border-bottom-right-radius:1rem;">{{premiumPaid}}</td>
                   </tr>
                 </table>
               </div>
@@ -562,16 +564,16 @@
                   </p>
         <p style=" margin-top: 5%; margin-bottom: -4%; ">
                 In case you need help with servicing or claims, <br />
-                please reach out to [insurerName]:
+                please reach out to {{insurerName}}:
               </p>
             </div>
             <div class="policy_flex_column">
               <div class="table">
                 <table>
                   <tr>
-                    <td style="border-top-left-radius:1rem; border-bottom-left-radius:1rem;padding-left: 65px; position: relative;"><img class="icon-phone" src="./assets/images/icons.png" alt="icon-phone"> [Contact Number]</td>
+                    <td style="border-top-left-radius:1rem; border-bottom-left-radius:1rem;padding-left: 65px; position: relative;"><img class="icon-phone" src="./assets/images/icons.png" alt="icon-phone"> {{ContactNumber}}</td>
 
-                    <td style="border-top-right-radius:1rem; border-bottom-right-radius:1rem; padding-left: 65px; position: relative;"><img class="icon-email" src="./assets/images/icons(1).png" alt="icon-Email" > [Email ID]</td>
+                    <td style="border-top-right-radius:1rem; border-bottom-right-radius:1rem; padding-left: 65px; position: relative;"><img class="icon-email" src="./assets/images/icons(1).png" alt="icon-Email" > {{EmailID}}</td>
                   </tr>
                 
                 </table>
