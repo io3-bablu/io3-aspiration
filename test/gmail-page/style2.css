@@ -54,6 +54,7 @@
   left: 2%;
   pointer-events: none;
   background-color: #fff;
+  transition: 300ms ease-in-out;
 }
 .input1 {
   padding: 2px;
@@ -62,13 +63,16 @@
   height: 45px;
   font-size: 1.5rem;
 }
-.input1:hover {
-  border: solid 1px #284fdc;
+.input1:focus {
+  border: solid 3px #284fdc;
 }
 .input1:focus ~ .input-text,
 .input1:valid ~ .input-text {
   color: #284fdc;
-  transform: translateY(-2.4rem);
+  top: -5px;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  font-size: 1rem;
 }
 
 /* input ends here  */
