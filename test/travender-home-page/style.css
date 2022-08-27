@@ -10,6 +10,7 @@
   height: auto;
 }
 /* first section start here */
+
 .container1 {
   position: relative;
   width: 100%;
@@ -958,4 +959,27 @@
   font-size: 2rem;
   color: #d9d9d9;
   cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  .main {
+    margin: auto;
+    width: 550px;
+    height: auto;
+  }
+  .container1 {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #d9d9d9;
+  }
+  .box1 {
+    position: absolute;
+    top: 30%;
+    left: 13%;
+    width: 29%;
+    height: 60%;
+    background-color: #fd633f;
+    border-radius: 20px;
+    font-family: Montserrat, sans-serif !important;
+  }
 }

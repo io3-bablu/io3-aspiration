@@ -66,14 +66,15 @@
 }
 .input1:focus ~ .First-name,
 .input1:valid ~ .First-name {
-  top: -9px;
+  top: -7px;
   background-color: #fff;
   border-left: 1px solid black;
   border-right: 1px solid black;
   color: #1b4fe6;
+  font-size: 0.8rem;
 }
 .input1:focus {
-  border: none;
+  border: solid 3px #1b4fe6;
 }
 
 /* input1 ends here  */
@@ -106,11 +107,15 @@
 }
 .input2:focus ~ .Last-name,
 .input2:valid ~ .Last-name {
-  top: -9px;
+  top: -7px;
   background-color: #fff;
   border-left: 1px solid black;
   border-right: 1px solid black;
   color: #1b4fe6;
+  font-size: 0.8rem;
+}
+.input2:focus {
+  border: solid 3px #1b4fe6;
 }
 /* input2 ends here  */
 /* input3 start here  */
@@ -142,11 +147,15 @@
 }
 .input3:focus ~ .Username,
 .input3:valid ~ .Username {
-  top: -9px;
+  top: -7px;
   background-color: #fff;
   border-left: 1px solid black;
   border-right: 1px solid black;
   color: #1b4fe6;
+  font-size: 0.8rem;
+}
+.input3:focus {
+  border: solid 3px #1b4fe6;
 }
 /* input3 ends here  */
 /* input4 start here   */
@@ -179,11 +188,15 @@
 }
 .input4:focus ~ .password,
 .input4:valid ~ .password {
-  top: -9px;
+  top: -7px;
   background-color: #fff;
   border-left: 1px solid black;
   border-right: 1px solid black;
   color: #1b4fe6;
+  font-size: 0.8rem;
+}
+.input4:focus {
+  border: solid 3px #1b4fe6;
 }
 /* input4 end here   */
 /* input5 start here   */
@@ -217,14 +230,15 @@
 }
 .input5:focus ~ .confirm,
 .input5:valid ~ .confirm {
-  top: 4px;
+  top: 7px;
   background-color: #fff;
   border-left: 1px solid black;
   border-right: 1px solid black;
   color: #1b4fe6;
+  font-size: 0.8rem;
 }
 .input5:focus {
-  border: solid 1px #1b4fe6;
+  border: solid 3px #1b4fe6;
 }
 /* input5 end here   */
 
@@ -297,4 +311,45 @@ button {
   top: 59%;
   left: 68%;
   font-size: 1.1rem;
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    top: 38px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    width: 550px;
+    height: 500px;
+    border: solid 1px #000;
+  }
+  .icon {
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    width: 15%;
+    height: 8%;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 450) {
+  .container {
+    top: 38px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    width: 550px;
+    height: 500px;
+    border: solid 1px #000;
+  }
+  .icon {
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    width: 15%;
+    height: 8%;
+    cursor: pointer;
+  }
+  .image2 {
+    display: none;
+  }
 }
