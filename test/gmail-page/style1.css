@@ -297,6 +297,12 @@ button {
   color: #fff;
   border: none;
   border-radius: 2px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #5477e2;
+  transform: scale(1.1);
+  font-size: 1rem;
 }
 .image2 {
   position: absolute;
@@ -312,7 +318,7 @@ button {
   left: 68%;
   font-size: 1.1rem;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .container {
     top: 38px;
     position: relative;
@@ -331,7 +337,7 @@ button {
     cursor: pointer;
   }
 }
-@media screen and (min-width: 450) {
+@media screen and (min-width: 450) and (max-width: 1100px) {
   .container {
     top: 38px;
     position: relative;
@@ -350,6 +356,6 @@ button {
     cursor: pointer;
   }
   .image2 {
-    display: none;
+    display: hidden;
   }
 }
