@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript1-assignment</title>
+  </head>
+  <body>
+    <h1>hello this is javaScript ist assignment.../</h1>
+    <script>
+      //1. Write a function to print your name, hobbies-------
+      const name = "bobby singh";
+      const hobby = "codding";
+      function nameHobby() {
+        console.log(`hi i'm ${name}`);
+        console.log(` my hobby is ${hobby}`);
+      }
+      nameHobby();
+      //  first point is done-----------------------------
+
+      // 2. Write a function to enter your you favorite avengers and concat with string
+      // Input: entered Ironman from keyboard
+      //Output: My favorite avenger is IronMan. I am dying heart fan of IronMan
+
+      const avengers = prompt(`enter your favorite avengers name`);
+
+      function favoriteAvengers() {
+        console.log(
+          `My favorite avenger is ${avengers}. I am dying heart fan of him`
+        );
+      }
+      favoriteAvengers();
+      //  2nd point is done-----------------------------
+
+      //3. Write a program to calculate average of 5 subject entered using keyboard
+      const hindi = prompt(`enter hindi marks`);
+      const english = prompt(`enter english marks`);
+      const punjabi = prompt(`enter punjabi marks`);
+      const scince = prompt(`enter scince marks`);
+      const math = prompt(`enter math marks`);
+
+      function studentReportCard({
+        hindiMarks,
+        englishMarks,
+        punjabiMarks,
+        scinceMarks,
+        mathMarks,
+      }) {
+        if (hindiMarks > 100) {
+          console.warn(
+            `enter the valid hindi marks ${hindiMarks} that you get.../`
+          );
+        } else {
+          console.log(`hindi marks is`, hindi);
+        }
+        if (englishMarks > 100) {
+          console.warn(
+            `enter the valid english marks ${englishMarks}that you get.../ `
+          );
+        } else {
+          console.log(`english marks is`, english);
+        }
+
+        if (punjabiMarks > 100) {
+          console.warn(
+            `enter the valid punjabi marks ${punjabiMarks}that you get.../ `
+          );
+        } else {
+          console.log(`punjabi marks is`, punjabi);
+        }
+
+        if (scinceMarks > 100) {
+          console.warn(
+            `enter the valid scince marks ${scinceMarks} that you get.../ `
+          );
+        } else {
+          console.log(`scince marks is`, scince);
+        }
+
+        if (mathMarks > 100) {
+          console.log(
+            `enter the valid math marks ${mathMarks} that you get.../ `
+          );
+        } else {
+          console.log(`math marks is`, math);
+        }
+      }
+      studentReportCard({
+        hindiMarks: hindi,
+        englishMarks: english,
+        punjabiMarks: punjabi,
+        scinceMarks: scince,
+        mathMarks: math,
+      });
+      const totalSubjects = 5;
+      const obtainedMarks =
+        Number(hindi) +
+        Number(english) +
+        Number(punjabi) +
+        Number(scince) +
+        Number(math);
+      const average = obtainedMarks / totalSubjects;
+      function averageMarks() {
+        console.log(`the average marks of 5 subjects is`, average);
+      }
+      averageMarks();
+      //  3rd point is done-----------------------------
+
+      //4. Enter 10 numbers from keyboard and Write a program to calculate average of those 10 numbers
+      const one = prompt(`enter 1st number`);
+      const two = prompt(`enter 2nd number`);
+      const three = prompt(`enter 3rd number`);
+      const four = prompt(`enter 4th number`);
+      const five = prompt(`enter 5th number`);
+      const six = prompt(`enter 6th number`);
+      const seven = prompt(`enter 7th number`);
+      const eight = prompt(`enter 8th number`);
+      const nine = prompt(`enter 9th number`);
+      const ten = prompt(`enter 10th number`);
+      const countOfNumbers = 10;
+      const totalOfNumbers =
+        Number(one) +
+        Number(two) +
+        Number(three) +
+        Number(four) +
+        Number(five) +
+        Number(six) +
+        Number(seven) +
+        Number(eight) +
+        Number(nine) +
+        Number(ten);
+      const averageOfNumbers = totalOfNumbers / countOfNumbers;
+      function averageNumber() {
+        console.log(
+          `the 1st no. is ${one} 2nd is ${two} 3rd is ${three} 4th is ${four} 5th is  ${five} 6th is ${six} 7th is ${seven} 8th is ${eight} 9th is ${nine} and 10th is${ten}`
+        );
+        console.log(`the average of these 10 numbers is `, averageOfNumbers);
+      }
+      averageNumber();
+      // 4th point is done-----------------------------
+
+      //5. Write a function to find a number(Entered through keyboard) is EVEN || ODD
+      let numbers = prompt(`enter the number here to check even/odd `);
+
+      function evenOdd() {
+        if (numbers % 2 === 0) {
+          console.log(`${numbers} is a valid even number`);
+        }
+        if (numbers % 2 !== 0) {
+          console.log(`${numbers} is a valid odd number`);
+        }
+      }
+      evenOdd();
+      // 5th point is done-----------------------------
+
+      //6. Write a function to calculate simple interest.
+    </script>
+  </body>
+</html>
