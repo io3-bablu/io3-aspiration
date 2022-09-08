@@ -79,7 +79,7 @@
         }
 
         if (mathMarks > 100) {
-          console.log(
+          console.warn(
             `enter the valid math marks ${mathMarks} that you get.../ `
           );
         } else {
@@ -143,15 +143,15 @@
       //5. Write a function to find a number(Entered through keyboard) is EVEN || ODD
       let numbers = prompt(`enter the number here to check even/odd `);
 
-      function evenOdd() {
-        if (numbers % 2 === 0) {
-          console.log(`${numbers} is a valid even number`);
+      function evenOdd(num) {
+        if (num % 2 === 0) {
+          console.log(`${num} is a valid even number`);
         }
-        if (numbers % 2 !== 0) {
-          console.log(`${numbers} is a valid odd number`);
+        if (num % 2 !== 0) {
+          console.log(`${num} is a valid odd number`);
         }
       }
-      evenOdd();
+      evenOdd(numbers);
       // 5th point is done-----------------------------
 
       //6. Write a function to calculate simple interest.
