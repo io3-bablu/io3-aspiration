@@ -155,6 +155,20 @@
       // 5th point is done-----------------------------
 
       //6. Write a function to calculate simple interest.
+      const principalAmount = prompt(`enter the principal amount`);
+      const rateOfInterest = prompt(`enter the yearly rate of interret of `);
+      const timeOfPeriod = prompt(`enter the time of loan of periood `);
+      const annualInterest =
+        (Number(principalAmount) *
+          Number(rateOfInterest) *
+          Number(timeOfPeriod)) /
+        100;
+
+      function annualInterestValue() {
+        console.log(`the annual interest is ${annualInterest} `);
+      }
+      annualInterestValue();
+      // // 6th point is done-----------------------------
     </script>
   </body>
 </html>
