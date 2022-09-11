@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class work</title>
+  </head>
+  <body>
+    <h1>hello javascript</h1>
+    <script>
+      const Fahrenheit = 100;
+      function farConvertToCelsius(f) {
+        const far = Number(f);
+        const tempInCelsius = ((far - 32) * 5) / 9;
+        return `the temperature of city is ${tempInCelsius.toFixed(2)}\xB0C`;
+      }
+      console.log(farConvertToCelsius(Fahrenheit));
+
+      // 1st point is done--------------------
+
+      const r = prompt(`enter the radius of circle`),
+        PI = 3.14159,
+        l = prompt(`enter the length of rectangle`),
+        w = prompt(`enter the with of rectangle`);
+
+      function area({ radius, type, length, width }) {
+        if (type == "circle") {
+          const areaOfCircle = PI * r ** 2;
+          const CircumferenceOfCircle = Number(2) * PI * r;
+          return `the area of the ${type} is ${areaOfCircle.toFixed(
+            2
+          )} and the Circumference of ${type} is ${CircumferenceOfCircle.toFixed(
+            2
+          )}`;
+        }
+        if (type == "rectangle") {
+          const areaOfRectangle = l * w;
+          const CircumferenceOfRectangle = 2 * (l + w);
+          return `the area of the ${type} is ${areaOfRectangle.toFixed(
+            2
+          )} and the Circumference of ${type} is ${CircumferenceOfRectangle.toFixed(
+            2
+          )}`;
+        }
+      }
+      const areaCircumferenceOfCircle = area({ radius: r, type: "circle" });
+      const areaCircumferenceOfRectangle = area({
+        length: l,
+        width: w,
+        type: "rectangle",
+      });
+      console.log(areaCircumferenceOfRectangle);
+
+      console.log(areaCircumferenceOfCircle);
+    </script>
+  </body>
+</html>

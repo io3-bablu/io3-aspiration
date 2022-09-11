@@ -7,17 +7,17 @@
     <title>leep year</title>
   </head>
   <body>
-    <h1>let's find the leep year.../</h1>
+    <h1>let's find the leap year.../</h1>
     <script>
-      const year = prompt(`enter the year to know leep-year and simple-year`);
-      function leepYear() {
+      const year = prompt(`enter the year to know leap-year and simple-year`);
+      function leapYear() {
         if (year % 4 === 0) {
-          console.log(`${year} is a leep year`);
+          document.write(`${year} is a leap year 366 days`);
         } else {
-          console.log(`${year} is a simple year`);
+          document.write(`${year} is a simple year 365 days`);
         }
       }
-      leepYear();
+      leapYear();
     </script>
   </body>
 </html>
