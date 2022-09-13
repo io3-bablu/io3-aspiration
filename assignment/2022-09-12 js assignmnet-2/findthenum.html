@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>find the number</title>
+  </head>
+  <body>
+    <h1>find the number</h1>
+    <script>
+      function findNumber(number, startNumber, endNumber) {
+        if (startNumber < number && endNumber > number) {
+          console.log(
+            `the ${number} is present between ${startNumber} to ${endNumber}`
+          );
+        } else {
+          console.log(
+            `the ${number} is not present between ${startNumber} to ${endNumber} `
+          );
+        }
+      }
+      findNumber(11, 1, 10);
+    </script>
+  </body>
+</html>

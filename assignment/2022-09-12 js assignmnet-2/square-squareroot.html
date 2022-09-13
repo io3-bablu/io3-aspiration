@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>square-sqrt</title>
+  </head>
+  <body>
+    <h1>calculate the square nd square-sqrt</h1>
+    <script>
+      const num1 = 5,
+        num2 = 4;
+
+      function squareSqrt({ num1, mun2, type }) {
+        if (type == "power") {
+          console.log(
+            `the power of ${num1} and ${num2} is `,
+            Math.pow(num1, num2)
+          );
+        } else if (type == "sqrt") {
+          console.log(`the sqrt of ${num1} is `, Math.sqrt(num1));
+        } else {
+          console.log(`enter the valid value of type of`);
+        }
+      }
+      squareSqrt({ num1: 144, num2: 4, type: "sqrt" });
+    </script>
+  </body>
+</html>

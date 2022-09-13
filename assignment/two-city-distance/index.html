@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>distance-converter-function-js</title>
+  </head>
+  <body>
+    <h1>hello javascript</h1>
+    <script>
+      const distanceInKM = prompt(
+        `Enter the distance between cites in kilometer`
+      );
+      function distance(distanceInKM) {
+        let distanceInMete = Number(distanceInKM) * 1000;
+        let distanceInFoot = Number(distanceInKM) * 3280.8399;
+        let distanceInInch = distanceInKM * 39370.07;
+        console.log(
+          `The distance between two city in meter-->${distanceInMete.toFixed(2)}
+           nd in foot--->${distanceInFoot.toFixed(2)} 
+           and in inch--->${distanceInInch.toFixed(2)}`
+        );
+      }
+      const convertedDistance = distance(distanceInKM);
+    </script>
+  </body>
+</html>
