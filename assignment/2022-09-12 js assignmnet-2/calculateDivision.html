@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculate-division</title>
+  </head>
+  <body>
+    <h1>calculate-division</h1>
+    <script>
+      //   const sub1 = prompt(`Enter the sub1 number`);
+      //   const sub2 = prompt(`Enter the sub2 number`);
+      //   const sub3 = prompt(`Enter the sub3 number`);
+      //   const sub4 = prompt(`Enter the sub4 number`);
+      //   const sub5 = prompt(`Enter the sub5 number`);
+      //   const totalMarks = 500;
+      //   const obtainedMark =
+      //     Number(sub1) +
+      //     Number(sub2) +
+      //     Number(sub3) +
+      //     Number(sub4) +
+      //     Number(sub5);
+      //   const percentage = (obtainedMark / totalMarks) * 100;
+      function division(sub1, sub2, sub3, sub4, sub5) {
+        const totalMarks = 500;
+        const obtainedMark =
+          Number(sub1) +
+          Number(sub2) +
+          Number(sub3) +
+          Number(sub4) +
+          Number(sub5);
+        const percentage = (obtainedMark / totalMarks) * 100;
+        if (percentage >= 60) {
+          console.log(
+            `you passed from first division and you get ${percentage}%`
+          );
+        } else if (percentage >= 50 && percentage < 60) {
+          console.log(
+            `you passed from second division and you get ${percentage}%`
+          );
+        } else if (percentage >= 40 && percentage < 49) {
+          console.log(
+            `you passed from third division and you get ${percentage}%`
+          );
+        } else {
+          console.log(`Sorry you are fail `);
+        }
+      }
+      division(35, 80, 50, 80, 65);
+    </script>
+  </body>
+</html>

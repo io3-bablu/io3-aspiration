@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>youngest-age</title>
+  </head>
+  <body>
+    <h1>Determine who's the youngest one</h1>
+    <script>
+      //   const Ram = 5;
+      //   const sham = 15;
+      //   const Ajay = 25;
+      function youngestOne({ ram, sham, ajay }) {
+        if (ram < sham && ram < ajay) {
+          console.log(`ram is youngest from sham && ajay`);
+        } else if (sham < ram && sham < ajay) {
+          console.log(`sham is youngest from ram && ajay`);
+        } else {
+          console.log(`ajay is youngest from ram && sham`);
+        }
+      }
+      youngestOne({ ram: 40, sham: 2, ajay: 0 });
+    </script>
+  </body>
+</html>

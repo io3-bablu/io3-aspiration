@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insure Driver</title>
+  </head>
+  <body>
+    <h1>Insure Driver</h1>
+    <script>
+      function insureDriver({ maritalStatus, sex, age }) {
+        if (maritalStatus == "unmarried") {
+          if (sex == "male" && age >= 30) {
+            console.log(`the driver is insured`);
+          } else if (sex == "female" && age >= 25) {
+            console.log(`the driver is insured`);
+          } else {
+            `The driver is not insured`;
+          }
+        } else if (maritalStatus == "married") {
+          console.log(`the driver is insured`);
+        } else {
+          `The driver is not insured`;
+        }
+      }
+      insureDriver({ maritalStatus: "unmarried", sex: "female", age: 25 });
+      // it's not working------------------------
+    </script>
+  </body>
+</html>
