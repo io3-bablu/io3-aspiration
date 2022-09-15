@@ -10,21 +10,21 @@
     <h1>Insure Driver</h1>
     <script>
       function insureDriver({ maritalStatus, sex, age }) {
-        if (maritalStatus == "unmarried") {
-          if (sex == "male" && age >= 30) {
-            console.log(`the driver is insured`);
-          } else if (sex == "female" && age >= 25) {
-            console.log(`the driver is insured`);
-          } else {
-            `The driver is not insured`;
-          }
+        if (sex == "male" && age >= 30 && maritalStatus == "unmarried") {
+          console.log(`the driver is insured`);
+        } else if (
+          sex == "female" &&
+          age >= 25 &&
+          maritalStatus == "unmarried"
+        ) {
+          console.log(`the driver is insured`);
         } else if (maritalStatus == "married") {
           console.log(`the driver is insured`);
         } else {
           `The driver is not insured`;
         }
       }
-      insureDriver({ maritalStatus: "unmarried", sex: "female", age: 25 });
+      insureDriver({ maritalStatus: "unmarried", sex: "female", age: 1 });
       // it's not working------------------------
     </script>
   </body>
