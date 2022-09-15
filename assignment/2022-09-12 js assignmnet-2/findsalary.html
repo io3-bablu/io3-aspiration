@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find-salary</title>
+  </head>
+  <body>
+    <h1>hello JS</h1>
+    <script>
+      function findSalary({ gender, yearOfService, qualification }) {
+        if (gender == "male" && yearOfService >= 10 && qualification == "pg") {
+          console.log(`you got salary 15000`);
+        } else if (
+          gender == "male" &&
+          yearOfService >= 10 &&
+          qualification == "g"
+        ) {
+          console.log(`you got salary 10000`);
+        } else if (
+          gender == "male" &&
+          yearOfService < 10 &&
+          qualification == "pg"
+        ) {
+          console.log(`you got salary 7000`);
+        } else if (
+          gender == "male" &&
+          yearOfService < 10 &&
+          qualification == "g"
+        ) {
+          console.log(`you got salary 10000`);
+        } else if (
+          gender == "female" &&
+          yearOfService >= 10 &&
+          qualification == "pg"
+        ) {
+          console.log(`you got salary 12000`);
+        } else if (
+          gender == "female" &&
+          yearOfService >= 10 &&
+          qualification == "g"
+        ) {
+          console.log(`you got salary 9000`);
+        } else if (
+          gender == "female" &&
+          yearOfService < 10 &&
+          qualification == "pg"
+        ) {
+          console.log(`you got salary 10000`);
+        } else if (
+          gender == "female" &&
+          yearOfService < 10 &&
+          qualification == "g"
+        ) {
+          console.log(`you got salary 6000`);
+        } else {
+          console.log(`enter valid data`);
+        }
+      }
+      findSalary({ gender: "male", yearOfService: 12, qualification: "g" });
+    </script>
+  </body>
+</html>

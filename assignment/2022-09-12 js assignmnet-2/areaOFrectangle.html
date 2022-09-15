@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>area of rectangle</title>
+  </head>
+  <body>
+    <h1>hello JS</h1>
+    <script>
+      function areaAndPerimeter({ l, w }) {
+        const area = l * w;
+        const perimeter = 2 * (l + w);
+        if (area > perimeter) {
+          console.log(
+            `the area of the rectangle ${area} is greater then it's perimeter ${perimeter} `
+          );
+        } else {
+          console.log(`pleas Enter valid value`);
+        }
+      }
+      areaAndPerimeter({ l: 5, w: 4 });
+    </script>
+  </body>
+</html>
