@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profit-loss</title>
+  </head>
+  <body>
+    <h1>Profit loss calculator</h1>
+    <script>
+      function profitLoss({ cost, sell }) {
+        const loss = cost - sell,
+          Profit = sell - cost;
+        if (cost > sell) {
+          console.log(
+            `you'r cost price is ${cost} and sell price is ${sell} you'r in loss ${loss} rupees`
+          );
+        } else {
+          console.log(
+            `you'r cost price is ${cost} and sell price is ${sell} you gain profit ${Profit} rupees`
+          );
+        }
+      }
+      profitLoss({ cost: 1200, sell: 1400 });
+    </script>
+  </body>
+</html>

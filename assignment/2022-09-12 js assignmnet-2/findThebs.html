@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>find basic salary</title>
+  </head>
+  <body>
+    <h1>find basic salary</h1>
+    <script>
+      function findBS({ bs }) {
+        if (bs < 1500) {
+          HRA = (bs * 10) / 100;
+          DA = (bs * 90) / 100;
+          console.log(
+            ` IF basic salary ${bs} then gross salary is ${bs + HRA + DA}`
+          );
+        } else {
+          HRA = 500;
+          DA = (bs * 98) / 100;
+          console.log(
+            ` IF basic salary ${bs} then gross salary is ${bs + HRA + DA}`
+          );
+        }
+      }
+      findBS({ bs: 1400 });
+    </script>
+  </body>
+</html>

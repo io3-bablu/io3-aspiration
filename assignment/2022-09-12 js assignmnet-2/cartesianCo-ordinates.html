@@ -7,18 +7,18 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Hello world</h1>
+    hello js
     <script>
-      function areaOfTriangle({ ab, bc, ca }) {
-        const s = ab + bc + ca,
-          areaOfTriangle = Math.sqrt(s * (s - ab) * (s - bc) * (s - ca));
+      function cartesianCoOrdinates({ x, y }) {
+        const r = Math.sqrt(x * x + y * y);
+        const gama = 1 / Math.tan(x / y);
         console.log(
-          `area of triangle of ${areaOfTriangle.toFixed(
+          `the value of polar Co-Ordinates of R is ${r.toFixed(
             2
-          )} witch lengths is AB=${ab}, BC=${bc}, CA=${ca}`
+          )} and gama is ${gama.toFixed(2)} `
         );
       }
-      areaOfTriangle({ ab: 45, bc: 23, ca: 55 });
+      cartesianCoOrdinates({ x: 3, y: 3 });
     </script>
   </body>
 </html>

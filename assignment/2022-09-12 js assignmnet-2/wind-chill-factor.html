@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wind chill factor</title>
+  </head>
+  <body>
+    <h1>wind chill factor</h1>
+    <script>
+      function chillFactor({ temperature, velocity }) {
+        const wcf =
+          35.74 +
+          0.6215 * temperature +
+          (0.4275 * temperature - 35.75) * Math.pow(velocity, 0.16);
+        console.log(
+          `If temperature=${temperature}\xB0 and velocity=${velocity}km/h then wind chill factor is ${wcf.toFixed(
+            2
+          )}\xB0`
+        );
+      }
+      chillFactor({ temperature: 30, velocity: 10 });
+    </script>
+  </body>
+</html>

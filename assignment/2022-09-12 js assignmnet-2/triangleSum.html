@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    hello js
+    <script>
+      function angleSum({ ab, bc, ca }) {
+        const sumOfAngle = ab + bc + ca;
+        if (sumOfAngle == 180) {
+          console.log(
+            `the triangle is valid it's three angles sum is equal to ${sumOfAngle}\xB0`
+          );
+        } else {
+          console.log(
+            `the triangle is not valid it's three angles sum is not equal to 180\xB0`
+          );
+        }
+      }
+      angleSum({ ab: 20, bc: 50, ca: 70 });
+    </script>
+  </body>
+</html>
