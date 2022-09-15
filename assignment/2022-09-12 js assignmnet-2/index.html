@@ -9,6 +9,7 @@
   <body>
     <h1>Hello world</h1>
     <script>
+      //  ### 1. Check if input variable from keyboard is a number or not
       let number = prompt(`enter the number`);
       function input(number) {
         if (Number(number) == Number(number)) {
@@ -18,6 +19,96 @@
         }
       }
       input(number);
+
+      //### 2. Write a function and pass two parameter to find the largest number.
+      function greaterOrLess({ num1, num2 }) {
+        if (num1 > num2) {
+          console.log(`the ${num1} is greater then ${num2}`);
+        } else if (num2 > num1) {
+          console.log(`the ${num2} is greater then ${num1}`);
+        } else if (num1 == num2) {
+          console.log(`the ${num2} and ${num1} is equal`);
+        } else {
+          return `enter the valid value`;
+        }
+      }
+      greaterOrLess({ num1: 42, num2: 42 });
+      //--### 3. Check if a triangle is equilateral, scalene, or isosceles
+
+      //   const s1 = prompt(`Enter the 1st side  value of triangle`),
+      //     s2 = prompt(`Enter the 2st side value of triangle`),
+      //     s3 = prompt(`Enter the 3st side value of triangle`);
+      function typeOfTriangle(s1, s2, s3) {
+        if (s1 == s2 && s2 == s3) {
+          console.log(`the type of triangle is equilateral`);
+        } else if ((s1 == s2 || s2) == s3) {
+          console.log(`the type of triangle is isosceles`);
+        } else {
+          console.log(`the type of triangle is scalene`);
+        }
+      }
+      typeOfTriangle(5, 5, 5);
+      //### 4. Find the a number is present in given range || if the number existed in between two number.
+
+      function findNumber(number, startNumber, endNumber) {
+        if (startNumber < number && endNumber > number) {
+          console.log(
+            `the ${number} is present between ${startNumber} to ${endNumber}`
+          );
+        } else {
+          console.log(
+            `the ${number} is not present between ${startNumber} to ${endNumber} `
+          );
+        }
+      }
+      findNumber(11, 1, 10);
+      //### 5. Write a function which calculates two entered numbers according to operation
+      function calculate(number1, number2, operation) {
+        if (operation == "add") {
+          console.log(
+            `the add of ${number1} nd ${number2} is= ${number1 + number2}`
+          );
+        } else if (operation == "subtract") {
+          console.log(
+            `the subtract of ${number1} nd ${number2} is ${number1 - number2}`
+          );
+        } else if (operation == "multiply") {
+          console.log(
+            `the multiply of ${number1} nd ${number2} is ${number1 * number2}`
+          );
+        } else if (operation == "division") {
+          console.log(
+            `the division of ${number1} nd ${number2} is ${number1 / number2}`
+          );
+        } else if (operation == "modulus") {
+          console.log(
+            `the modulus of ${number1} nd ${number2} is ${number1 % number2}`
+          );
+        } else {
+          console.log(`enter the valid value`);
+        }
+      }
+      calculate(10, 2, "division");
+      //### 6. Write a function which calculates square and square-root of any number
+      function squareSqrt({ num1, mun2, type }) {
+        if (type == "power") {
+          console.log(
+            `the power of ${num1} and ${num2} is `,
+            Math.pow(num1, num2)
+          );
+        } else if (type == "sqrt") {
+          console.log(`the sqrt of ${num1} is `, Math.sqrt(num1));
+        } else {
+          console.log(`enter the valid value of type of`);
+        }
+      }
+      squareSqrt({ num1: 144, num2: 4, type: "sqrt" });
+      //### 7. Write a function which calculates 4^7, 10^4, 12^3, 90^4
+      function calculateThePower(x, y) {
+        console.log(` ${x} The power ${y} is`, Math.pow(x, y));
+      }
+      calculateThePower(4, 7);
+      // 4^7, 10^4, 12^3, 90^4
     </script>
   </body>
 </html>
