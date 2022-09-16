@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ascii-code</title>
+  </head>
+  <body>
+    hello js
+    <script>
+      var char = prompt(`Enter the character`);
+      var charCode = char.charCodeAt(0);
+      //   console.log(charCode);
+      function findChar({ char, charCode }) {
+        if (charCode >= 65 && charCode <= 90) {
+          console.log(`The -->${char}<-- is a capital letter`);
+        } else if (charCode >= 97 && charCode <= 122) {
+          console.log(`The -->${char}<-- is a small case letter`);
+        } else if (charCode >= 48 && charCode <= 57) {
+          console.log(`The -->${char}<--is a number `);
+        } else if (
+          (charCode >= 0 && charCode <= 47) ||
+          (charCode >= 58 && charCode <= 64) ||
+          (charCode >= 91 && charCode <= 96) ||
+          (charCode >= 123 && charCode <= 127)
+        ) {
+          console.log(`The-->${char}<-- is a special symbol`);
+        } else {
+          console.log(`Enter the valid data`);
+        }
+      }
+      findChar({ char: char, charCode: charCode });
+    </script>
+  </body>
+</html>
