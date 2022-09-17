@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weight class</title>
+  </head>
+  <body>
+    hello js
+    <script>
+      function weightClass(weight) {
+        if (weight < 115) {
+          console.log(
+            `The weight of the boxer is ${weight} and his boxing class is-->Flyweight <---`
+          );
+        } else if (weight >= 115 && weight <= 121) {
+          console.log(
+            `The weight of the boxer is ${weight} and his boxing class is-->BantamWeight  <---`
+          );
+        } else if (weight >= 122 && weight <= 153) {
+          console.log(
+            `The weight of the boxer is ${weight} and his boxing class is-->Featherweight  <---`
+          );
+        } else if (weight >= 154 && weight <= 189) {
+          console.log(
+            `The weight of the boxer is ${weight} and his boxing class is-->Middleweight  <---`
+          );
+        } else {
+          console.log(
+            `The weight of the boxer is ${weight} and his boxing class is-->Heavyweight  <---`
+          );
+        }
+      }
+      weightClass(130);
+    </script>
+  </body>
+</html>

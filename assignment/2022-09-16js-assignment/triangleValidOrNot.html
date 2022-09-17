@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>triangle is valid</title>
+  </head>
+  <body>
+    hello js
+    <script>
+      const ab = prompt(`Enter the side of triangle (ab)`);
+      const bc = prompt(`Enter the side of triangle (bc)`);
+      const ca = prompt(`Enter the side of triangle (ca)`);
+
+      function angleSum({ ab, bc, ca }) {
+        const sumOfAbBc = ab + bc;
+        const sumOfBcCa = bc + ca;
+        const sumOfCaAb = ca + ab;
+
+        if (sumOfAngles == 180) {
+          console.log(
+            `the triangle is valid it's three angles sum is equal to ${sumOfAngles}\xB0`
+          );
+        } else {
+          console.log(
+            `the triangle is not valid it's three angles sum is not equal to 180\xB0`
+          );
+        }
+      }
+      angleSum({ ab, bc, ca });
+    </script>
+  </body>
+</html>

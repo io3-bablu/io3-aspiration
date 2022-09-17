@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    hello js
+    <script>
+      const char = prompt(`Enter the character`);
+      function findChar() {
+        const charCode = char.charCodeAt(0);
+        if (charCode >= 97 && charCode <= 122) {
+          console.log(`the entered character is a lower case alphabet `);
+        } else {
+          console.log(`the entered character is not a lower case alphabet `);
+        }
+      }
+      findChar();
+      //--------------------special symbol---------------------
+      console.log(`--------------------special symbol----------------------`);
+      //=====================================================================
+      const symbol = prompt(`Enter the character`);
+      function findSymbol() {
+        const charCod = symbol.charCodeAt(0);
+        if (
+          (charCod >= 0 && charCod <= 47) ||
+          (charCod >= 58 && charCod <= 64) ||
+          (charCod >= 91 && charCod <= 96) ||
+          (charCod >= 123 && charCod <= 127)
+        ) {
+          console.log(`the entered character is a special symbol `);
+        } else {
+          console.log(`the entered character is not a special symbol `);
+        }
+      }
+      findSymbol();
+    </script>
+  </body>
+</html>

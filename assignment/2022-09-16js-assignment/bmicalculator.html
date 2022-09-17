@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI-calculator</title>
+  </head>
+  <body>
+    hello js
+    <script>
+      function findBmi({ weight, height }) {
+        const BMI = weight / height;
+        if (BMI < 15) {
+          console.log(
+            `BMI value of  weight ${weight} and height ${height} is ${BMI.toFixed(
+              2
+            )} and it's  BMI category is --->Starvation<---- `
+          );
+        } else if (BMI >= 15.1 && BMI <= 17.5) {
+          console.log(
+            `BMI value of  weight ${weight} and height ${height} is ${BMI.toFixed(
+              2
+            )} and it's  BMI category is --->Anorexic<---- `
+          );
+        } else if (BMI >= 17.6 && BMI <= 18.5) {
+          console.log(
+            `BMI value of  weight ${weight} and height ${height} is ${BMI.toFixed(
+              2
+            )} and it's  BMI category is --->Underweight<---- `
+          );
+        } else if (BMI >= 18.6 && BMI <= 24.9) {
+          console.log(
+            `BMI value of  weight ${weight} and height ${height} is ${BMI.toFixed(
+              2
+            )} and it's  BMI category is ---> Ideal <---- `
+          );
+        } else if (BMI >= 25 && BMI <= 25.9) {
+          console.log(
+            `BMI value of  weight ${weight} and height ${height} is ${BMI.toFixed(
+              2
+            )} and it's  BMI category is --->  Overweigh <---- `
+          );
+        } else if (BMI >= 30 && BMI <= 30.9) {
+          console.log(
+            `BMI value of  weight ${weight} and height ${height} is ${BMI.toFixed(
+              2
+            )} and it's  BMI category is --->  Obese <---- `
+          );
+        } else {
+          console.log(
+            `BMI value of  weight ${weight} and height ${height} is ${BMI.toFixed(
+              2
+            )} and it's  BMI category is --->  Morbidly Obese <----`
+          );
+        }
+      }
+      findBmi({ weight: 30, height: 1 });
+    </script>
+  </body>
+</html>

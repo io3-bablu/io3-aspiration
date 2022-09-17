@@ -8,6 +8,38 @@
   </head>
   <body>
     hello js
-    <script></script>
+    <script>
+      const hardness = prompt(`Enter hardness of steel`);
+      const carbon = prompt(`Enter hardness of steel`);
+      const tensile = prompt(`Enter hardness of steel`);
+      function gradesOfSteel({ hardness, carbon, tensile }) {
+        if (hardness > 50 && carbon < 0.7 && tensile > 5600) {
+          console.log(
+            `the grade of steel is (10) with carbon ${carbon} hardness  ${hardness} and tensile ${tensile}`
+          );
+        } else if (hardness > 50 && carbon < 0.7) {
+          console.log(
+            `the grade of steel is (9) with carbon ${carbon} hardness  ${hardness}`
+          );
+        } else if (carbon < 0.7 && tensile > 5600) {
+          console.log(
+            `the grade of steel is (8) with carbon ${carbon} and  tensile ${tensile}`
+          );
+        } else if (hardness > 50 && tensile > 5600) {
+          console.log(
+            `the grade of steel is (7) with hardness  ${hardness} and tensile ${tensile}`
+          );
+        } else if (hardness > 50 || carbon < 0.7 || tensile > 5600) {
+          console.log(
+            `the grade of steel is (6) with carbon ${carbon} hardness  ${hardness} and tensile ${tensile}`
+          );
+        } else {
+          console.log(
+            `the grade of steel is (5) becaus of no conditions are match`
+          );
+        }
+      }
+      gradesOfSteel({ hardness: hardness, carbon: carbon, tensile: tensile });
+    </script>
   </body>
 </html>
