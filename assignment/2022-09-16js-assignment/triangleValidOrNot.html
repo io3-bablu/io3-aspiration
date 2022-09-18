@@ -9,22 +9,25 @@
   <body>
     hello js
     <script>
-      // const ab = prompt(`Enter the side of triangle (ab)`);
-      // const bc = prompt(`Enter the side of triangle (bc)`);
-      // const ca = prompt(`Enter the side of triangle (ca)`);
+      const ab = prompt(`Enter the side of triangle (ab)`);
+      const bc = prompt(`Enter the side of triangle (bc)`);
+      const ca = prompt(`Enter the side of triangle (ca)`);
 
       function angleSum({ ab, bc, ca }) {
-        if (ab > bc && ab > ca) {
+        const largestSide = Math.max(ab, bc, ca);
+        const sumOfSides = Number(ab) + Number(bc) + Number(ca);
+        const sumOfTwoSide = sumOfSides - largestSide;
+        if (sumOfTwoSide > largestSide) {
           console.log(
-            ` $the triangle is valid becaus sum of two sides is ${sumOfTwoS} is greater then largest side ${ca}`
+            ` $the triangle is valid becaus sum of two sides is ${sumOfTwoSide} is greater then largest side ${largestSide}`
           );
         } else {
           console.log(
-            `the triangle is not valid becaus sum of two side ${sumOfTwoS} is less then largest side ${ca} `
+            `the triangle is not valid becaus sum of two side ${sumOfTwoSide} is less then largest side ${largestSide} `
           );
         }
       }
-      angleSum({ ab: 3, bc: 4, ca: 8 });
+      angleSum({ ab: ab, bc: bc, ca: ca });
     </script>
   </body>
 </html>
