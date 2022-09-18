@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RGB-to-CMYK</title>
+  </head>
+  <body>
+    HELLO JS
+    <script>
+      const r = prompt(`Enter the value of red`);
+      const g = prompt(`Enter the value of green`);
+      const b = prompt(`Enter the value of blue`);
+      function rgbToCmyk({ r, g, b }) {
+        const white = Math.max(r / 255, g / 255, b / 255),
+          cyan = (white - r / 255) / white,
+          Magenta = (white - g / 255) / white,
+          Yellow = (white - b / 255) / white,
+          Black = 1 - white;
+        if (
+          (r >= 0 && r <= 255) ||
+          (g >= 0 && g >= 255) ||
+          (b >= 0 && b <= 255)
+        ) {
+          console.log(
+            `The converted value of r=${r} g=${g} b=${b} in CMYK is cyan=${cyan.toFixed(
+              1
+            )} magenta=${Magenta.toFixed(1)} yellow=${Yellow.toFixed(
+              1
+            )} and black=${Black.toFixed(1)}`
+          );
+        } else {
+          console.log(`Enter the valid value between 0 to 255`);
+        }
+      }
+      rgbToCmyk({ r: r, g: g, b: b });
+    </script>
+  </body>
+</html>

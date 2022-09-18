@@ -9,26 +9,22 @@
   <body>
     hello js
     <script>
-      const ab = prompt(`Enter the side of triangle (ab)`);
-      const bc = prompt(`Enter the side of triangle (bc)`);
-      const ca = prompt(`Enter the side of triangle (ca)`);
+      // const ab = prompt(`Enter the side of triangle (ab)`);
+      // const bc = prompt(`Enter the side of triangle (bc)`);
+      // const ca = prompt(`Enter the side of triangle (ca)`);
 
       function angleSum({ ab, bc, ca }) {
-        const sumOfAbBc = ab + bc;
-        const sumOfBcCa = bc + ca;
-        const sumOfCaAb = ca + ab;
-
-        if (sumOfAngles == 180) {
+        if (ab > bc && ab > ca) {
           console.log(
-            `the triangle is valid it's three angles sum is equal to ${sumOfAngles}\xB0`
+            ` $the triangle is valid becaus sum of two sides is ${sumOfTwoS} is greater then largest side ${ca}`
           );
         } else {
           console.log(
-            `the triangle is not valid it's three angles sum is not equal to 180\xB0`
+            `the triangle is not valid becaus sum of two side ${sumOfTwoS} is less then largest side ${ca} `
           );
         }
       }
-      angleSum({ ab, bc, ca });
+      angleSum({ ab: 3, bc: 4, ca: 8 });
     </script>
   </body>
 </html>

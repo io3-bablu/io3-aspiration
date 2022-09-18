@@ -10,7 +10,8 @@
     hello js
     <script>
       function findBmi({ weight, height }) {
-        const BMI = weight / height;
+        const BMI = weight / height ** 2;
+
         if (BMI < 15) {
           console.log(
             `BMI value of  weight ${weight} and height ${height} is ${BMI.toFixed(
@@ -55,7 +56,7 @@
           );
         }
       }
-      findBmi({ weight: 30, height: 1 });
+      findBmi({ weight: 100, height: 2 });
     </script>
   </body>
 </html>
