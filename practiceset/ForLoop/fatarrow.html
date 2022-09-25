@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fat arrow function</title>
+  </head>
+  <body>
+    hello js
+    <script>
+      //----------------fat arrow function-------------------------
+      const bobby = prompt(`Enter the value of a`);
+      const ravi = prompt(`Enter the value of b`);
+
+      const multi = ({ a, b }) => `${a * b}`;
+      //   const multiplication = multi(15, 5);
+      //   const multiplication2 = multi(15, 5);
+
+      console.log(
+        ` The multiplication of two  number is ${multi({
+          a: bobby,
+          b: ravi,
+        })}`
+      );
+      //----------------------------
+    </script>
+  </body>
+</html>

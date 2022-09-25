@@ -9,12 +9,161 @@
   <body>
     hello js
     <script>
-      const tableOf = 3;
-      for (let count = 1; count <= 10; count++) {
-        const table = tableOf * count;
-        if (table % 2 == 0)
-          console.log(`table of three ${tableOf}*${count}=${count * tableOf}`);
+      //-----------------------function expression--------------------------------------
+      function sum(a, b) {
+        return (sumOfAb = a + b);
       }
+
+      const funEx = sum(2, 2),
+        funEx1 = sum(5, 4);
+      // console.log(funEx1);
+      //-----------------------anonymous function expression---------------------------
+      const funEx2 = function (c, d) {
+        return (total = c + d);
+      };
+      // console.log("sum of two number is ", funEx2(5, 5));
+      //-------------------------------- for loop --------------------------------------------
+      // const tableOf = 3;
+      // for (let count = 1; count <= 10; count++) {
+      //   const table = tableOf * count;
+      //   if (table % 5 == 0)
+      //     console.log(`table of three ${tableOf}*${count}=${table}`);
+      // }
+
+      // splice array method-- use for add,delete,update the elements of an array-- ==> array.splice(start from,delete index number, update elements);
+      // const array1 = [1, 3, 4, 6];
+      // const indexNumber = array1.indexOf(4);
+      // const lengthOfArray = array1.length;
+      // const addNumber = array1.splice(indexNumber, 1, 5);
+
+      // if (indexNumber !== -1) {
+      //   console.log(array1);
+      // } else {
+      //   console.log(`element not found`);
+      // }
+      // console.log(addNumber);
+
+      //concat array method---use to concat two different array----------
+      // const array4 = [63, 53, 89, 87, 49, 4, 66];
+      // const array3 = [6, 53, 89, 87, 49, 4, 48];
+
+      // console.log(array3.concat(array4));
+
+      //isArray array method--use to check variable is an array or not =>output-true-false---
+      // let check = Array.isArray(array1);
+      // console.log(check); //output:true
+
+      // const bobby = 98;
+      // let check1 = Array.isArray(bobby);
+
+      // console.log(check1); //output =>false
+      // reverse array method--- its show elements in reverse order----------
+      // array1.reverse();
+      // console.log(array1);
+      //1 shift array method--- use to remove (first) element from array-------------
+      // array1.shift();
+      // console.log(array1);
+      //2 pop array method--- use to remove (last) element from array-------------
+      // array1.pop();
+      // console.log(array1);
+      //3 unshift array method--- use to add (first) element in array-------------
+      // array1.unshift(2, 5);
+
+      // console.log(array1);
+      //4 push array method--- use to add (last) element in array-------------
+      // array1.push(65, 99);
+      // console.log(array1);
+      //5 shot array---sort show element in order by checking elements first digit or letter---------------------------
+      // array1.sort();
+      // console.log(array1);
+      //6 array every method---every give true & false if all elements match as per condition------------------
+      // const baby = array1.every((elem) => elem < 80);
+      // console.log(baby); // output false
+      //7 array some method--some give true & false if match minimum one  as per condition-------------------
+      // const baby = array1.some((elem) => elem > 100);
+      // console.log(baby);// output false
+      //-------------------------array reduce method--------------------------
+      // const aa = array1.reduce((elem, index) => elem + index);
+      // console.log(aa);
+      //--------------map method-------------------------------
+      // const array4 = [63, 53, 89, 87, 49, 4, 66];
+      // const mapMethod = array4.map((elem, index, arr) => {
+      //   return `the index no. ${index} value is ${elem} `;
+      // });
+      // console.log(mapMethod);
+
+      //----------------find method -------------------------
+      // const newArr = array1.find((elem) => {
+      //   return elem > 12;
+      // });
+      // console.log(newArr);
+      //---------------------findIndex------------------
+      // const newArr = array1.findIndex((elem) => {
+      //   return elem > 12;
+      // });
+      //---------------------filter---------------------
+      // const array1 = [1, 8, 3, 4, 6];
+
+      // const newArr = array1.filter((elem) => elem > 3);
+      // console.log(newArr);
+      //----------------search includes---------------------
+      // console.log(array1.includes(87));
+      // console.log(array1.length);
+      // // console.log(array1[7][1]);
+      // console.log(array1[array1.length - 1]);
+      // //=----------------------for loop------------------------------
+      // for (let i = 0; i < array1.length; i++) {
+      //   console.log(array1[i]);
+      // }
+      //-----------------------for loop--------------------------------------
+      // for (let i = 0; i <= array1.indexOf(0); i++) {
+      //   console.log(array1[i]);
+      // }
+      // ----------------------for in loop--------------------------
+      // for (let elements in array1) {
+      //   console.log(elements);
+      // }
+      // //-------------------for of loop------------------------------
+      // for (let elements of array1) {
+      //   console.log(elements);
+      // }
+      //------------------for each() loop-------------------------
+      // array1.forEach(function (element, index, array) {
+      //   console.log(element, "=" + "=", index);
+      // });
+      //---------------- for each() loop with fat arrow function----------------
+      // array1.forEach((element, index, array) => {
+      //   console.log(element, "==", index);
+      // });
+      //indexOf array method--use to check the index number of any element from the start of the array-----------------------
+
+      // console.log(array1.indexOf(49, 1));
+      //lastIndexOf array method--use to check the index number of any element from the end of the array-
+      // console.log(array1.lastIndexOf(49,2 ));
+
+      // const array2 = ["bobby", 44, 09, 87, 19];
+      // const newArray = array2.find((elem, index, array) => {
+      //   return elem;
+      // });
+      // console.log(newArray);
+      const month = [
+        "jan",
+        "feb",
+        "mar",
+        "apr",
+        "may",
+        "jun",
+        "jul",
+        "aug",
+        "sep",
+        "oct",
+        "nov",
+        "dec",
+      ];
+      let name = "bobby,aayat, baby";
+      let findName = name.indexOf("aayat");
+      let oneName = name.slice(findName, findName + 5);
+      console.log(oneName);
     </script>
   </body>
 </html>
