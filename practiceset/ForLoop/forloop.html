@@ -146,24 +146,84 @@
       //   return elem;
       // });
       // console.log(newArray);
-      const month = [
-        "jan",
-        "feb",
-        "mar",
-        "apr",
-        "may",
-        "jun",
-        "jul",
-        "aug",
-        "sep",
-        "oct",
-        "nov",
-        "dec",
-      ];
-      let name = "bobby,aayat, baby";
-      let findName = name.indexOf("aayat");
-      let oneName = name.slice(findName, findName + 5);
-      console.log(oneName);
+
+      //string method in java script------------------
+      const month =
+        "      jan,feb,mar,apr,May,jun,jul,aug,sep,oct,nov,dec      ";
+      console.log(month.toUpperCase()); //return value in upper case
+      console.log(month.toLowerCase()); //return value in lower case
+      const inumber = month.indexOf("t"); //return the index number
+      console.log(inumber);
+      console.log(month.charAt(inumber)); //return the value when enter index number
+      console.log(month.charCodeAt(inumber)); //return character code when enter index number
+      console.log(month.trim()); //its remove wide space
+      const stringToArray = month.split(","); //convert string into array
+      // const stringToArray = month.split(" ");//convert string into array
+      // const stringToArray = month.split("|");//convert string into array
+
+      //date method and time method
+      // it's calculate date and time from the date-1-jan-1970----
+      // creating date objects=====>
+      //there are 4 way to create a new date objects in javascript-----
+      // date objects created with the new date() constructor.
+      //1st------------------------------way----------------------------
+      let currentDate = new Date(); //show current time in 24hr format
+      console.log(currentDate);
+      //2nd------------------------------way----------------------------
+      console.log(new Date().toLocaleString()); //show current time according your country
+      //3rd------------------------------way----------------------------
+      console.log(new Date().toString()); //show current time in 24hr format
+      console.log(Date.now()); //return milliseconds since 1-jan-1970
+      // new Date() constructor take 7 perimeter
+      //(year,month,date,time in hr,minute,seconds,milliseconds)
+      //minimum two perimeter is compulsory witch is (year, month)-----
+      let date = new Date(2022, 8, 26, 14, 34, 23, 0); //create owen time
+      console.log(date.toLocaleString());
+      //4th------------------------------way----------------------------
+      let milli = Date.now();
+      let nDate = new Date(milli);
+      console.log(nDate.toLocaleString());
+
+      //date method-------------------------------
+      let nd = new Date();
+      console.log(nd.getDate()); //its show date only
+      console.log(nd.getFullYear());
+      console.log(nd.getMonth());
+      console.log(nd.getDay());
+      //how to set the individual date----------
+      let sd = new Date();
+      console.log(sd.setDate(2022));
+      console.log(sd.setMonth(2022));
+      //how to get the individual time----------
+      let st = new Date();
+      console.log(st.getHours());
+      console.log(st.getMinutes());
+      console.log(st.getSeconds());
+      console.log(st.getMilliseconds());
+      //how to set the individual time----------
+      // let st = new Date();
+      console.log(st.setHours(5));
+      console.log(st.setMinutes(5));
+      console.log(st.setSeconds(5));
+      console.log(st.setMilliseconds(5));
+      //to get time or date only-----------
+      console.log(new Date().toLocaleTimeString()); //to get current time
+      console.log(new Date().toLocaleDateString()); //to get current date
+      console.log(new Date().toLocaleString()); //to get time and date both
+      //**math method**-----------------------
+      console.log(Math.round(11.5)); //if after decimal value is >4 then its  remove decimal and increase the value or if after decimal value is <5 then its  remove decimal and return the value asitis
+      console.log(Math.pow(2, 5)); //return the power of any number by input argument
+      console.log(Math.sqrt(25)); //return the sqrt of number
+      console.log(Math.abs(-5.4)); // always return positive value
+      console.log(Math.max(0, 2, 3, 4, 5, 6, 7)); //its return largest number
+      console.log(Math.min(0, 2, 3, 4, 5, 6, 7)); // its return smallest number
+      console.log(Math.trunc(-99.6)); //its remove the decimal and return integer part of the value
+      console.log(Math.ceil(-99.6));
+      console.log(Math.PI.toFixed(2)); //its return the value of pi
+      console.log(Math.ceil(99.1)); //its remove decimal and increase value of  before decimal number
+      console.log(Math.floor(99.6)); // its remove decimal and return before decimal value asitis
+      let num = Math.ceil(Math.random() * 6);
+      console.log(num);
     </script>
   </body>
 </html>

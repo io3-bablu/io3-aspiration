@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice-set</title>
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="div1">
+        <p>Lorem ipsum dolor sit.</p>
+      </div>
+      <div class="div2">
+        <p>Lorem ipsum dolor sit.</p>
+      </div>
+      <div class="div1">
+        <p>Lorem ipsum dolor sit.</p>
+      </div>
+      <h1 id="heading">this is heading</h1>
+      <button id="button" onclick="changeHeading()">
+        click here to change the heading
+      </button>
+    </div>
+
+    <script>
+      // function changeHeading() {
+      //   const heading = "hi i am bobby";
+      //   document.getElementById("heading").innerHTML = heading;
+      // }
+      // //with fat arrow function-----------
+      const changeHeading = () => {
+        document.getElementById("heading").innerHTML = "hi im bobby";
+      };
+      // with tacking the reference; heading is the object here
+      // const changeHeading = () => {
+      //   const changeH1 = document.getElementById("heading");
+      //   changeH1.innerHTML = "hi im bobby";
+      // };
+      // with query selector--------------
+      // const changeHeading = () => {
+      //   const content = "hi im bobby";
+      //   document.querySelector("#heading").innerHTML = content;
+      // };
+
+      //****style with dom****
+      const secondChild = document.querySelector(".div2");
+      secondChild.style.color = "aqua";
+    </script>
+  </body>
+</html>

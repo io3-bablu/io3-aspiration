@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard Events</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        color: brown;
+        font-size: xx-large;
+        display: flex;
+      }
+      div {
+        position: relative;
+        top: 15rem;
+        margin: auto;
+      }
+      .input {
+        position: absolute;
+        top: 4rem;
+        right: 13rem;
+        height: 2rem;
+        border: solid 4px red;
+      }
+      #para {
+        margin-top: 5rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>press a key to know the character code of it</p>
+      <input
+        type="text"
+        class="input"
+        onkeypress="keyPress()"
+        onkeydown="keyDown()"
+        onkeyup="keyUp()"
+      />
+      <p id="para"></p>
+    </div>
+
+    <script>
+      //keyboard event
+      //==> Event that occur when user press any key on the keyboard---
+      //---belong to the keyboardEvent object
+      const keyPress = () => {
+        document.getElementById("para").innerHTML = `you press ${
+          event.key
+        } and it's charCode is ${event.key.charCodeAt()}`;
+      };
+      //   const keyDown = () => {
+      //     document.getElementById("para").innerHTML = `key is down now`;
+      //   };
+      //   const keyUp = () => {
+      //     document.getElementById("para").innerHTML = `key is up now`;
+      //   };
+    </script>
+  </body>
+</html>

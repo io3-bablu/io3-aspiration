@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>events in javaScript</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+      }
+      .main-div {
+        margin: auto;
+        text-align: center;
+      }
+      .button1-container,
+      .button2-container,
+      .button3-container,
+      .button4-container {
+        height: 2rem;
+        margin-top: 1rem;
+        border: solid 1px #000;
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+        font-size: x-large;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-div">
+      <h1>deferent events type in javaScript</h1>
+      <div class="div-button-container">
+        <div class="button4-container">
+          <a href="#" id="button4"
+            ><span class="button4-text"> Event listeners</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script>
+      const fourthWay = document.getElementById("button4");
+      const checkEvent = () => {
+        alert("event object");
+        console.log(event);
+        console.log(event.target);
+        console.log(event.type);
+      };
+      fourthWay.addEventListener("click", checkEvent);
+    </script>
+  </body>
+</html>

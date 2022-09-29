@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mouse Events</title>
+    <style>
+      .para {
+        font-size: xx-large;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p class="para" onmousedown="mouseDown()" onmouseup="mouseUp()">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+        tempora molestiae. Nostrum incidunt aliquid, repellendus doloremque odio
+        nam. Provident modi ducimus dolorum animi aut odit enim dicta esse optio
+        distinctio?
+      </p>
+    </div>
+    <script>
+      const mUp = document.querySelector(".para");
+      mUp.addEventListener("mouseleave", () => {
+        mUp.style.backgroundColor = "yellow";
+      });
+      const mouseUp = () => {
+        mUp.style.color = "#0000ab";
+      };
+      mUp.addEventListener("mouseenter", () => {
+        mUp.style.backgroundColor = "aqua";
+      });
+
+      function mouseDown() {
+        document.querySelector(".para").style.color = "red";
+      }
+      //   function mouseUp() {
+      //     document.querySelector(".para").style.color = "yellow";
+      //   }
+    </script>
+  </body>
+</html>

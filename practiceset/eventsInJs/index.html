@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>events in javaScript</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+      }
+      .main-div {
+        margin: auto;
+        text-align: center;
+      }
+      .button1-container,
+      .button2-container,
+      .button3-container,
+      .button4-container {
+        height: 2rem;
+        margin-top: 1rem;
+        border: solid 1px #000;
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+        font-size: x-large;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-div">
+      <h1>deferent events type in javaScript</h1>
+      <div class="div-button-container">
+        <div class="button1-container">
+          <a
+            href="#"
+            class="button1"
+            onclick="alert('i m awesome but no one use me ')"
+            ><span class="button1-text">Simple inline alert()</span></a
+          >
+        </div>
+        <div class="button2-container">
+          <a href="#" class="button2" onclick="callingFunction()">
+            <span class="button2-text">By calling a function</span></a
+          >
+        </div>
+        <div class="button3-container">
+          <a href="#" class="button3">
+            <span class="button3-text" id="button3"> Inner events</span>
+          </a>
+        </div>
+        <div class="button4-container">
+          <a href="#" id="button4"
+            ><span class="button4-text"> Event listeners</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
