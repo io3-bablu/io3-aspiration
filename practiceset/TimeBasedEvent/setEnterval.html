@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>set Interval</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+      }
+      .maindiv {
+        position: relative;
+        border-radius: 25px;
+        width: 50%;
+        height: 30vh;
+        background-color: beige;
+        font-size: xx-large;
+        text-align: center;
+        margin: auto;
+        margin-top: 15%;
+      }
+      #btn,
+      #btn1 {
+        cursor: pointer;
+        border-radius: 25px;
+        border: none;
+        color: blue;
+        background-color: bisque;
+        font-size: large;
+        width: 10rem;
+        height: 2rem;
+      }
+      #btn:hover,
+      #btn1:hover {
+        transform: scale(1.1);
+        color: red;
+      }
+      p {
+        color: blue;
+      }
+      .time {
+        border: solid red 1px;
+        background-color: black;
+        font-size: large;
+        position: absolute;
+        left: 2rem;
+        top: 2rem;
+        width: 8rem;
+        height: 2rem;
+        border-radius: 20px;
+      }
+      #time {
+        color: white;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maindiv">
+      <div class="time">
+        <p id="time"></p>
+      </div>
+      <p id="number"></p>
+      <br />
+      <button id="btn">start</button>
+      <button id="btn1">stop</button>
+    </div>
+    <script>
+      //there are four method to use Time Based Events
+      //**1**setTimeout()
+      //**2**setInterval()
+      //**3**clearTimeout()
+      //**4**clearInterval()
+      //setInterval-------------
+      const btn = document.querySelector("#btn");
+      const btn1 = document.querySelector("#btn1");
+      const number = document.querySelector("#number");
+      let num = 0;
+      let reference;
+      const myFunction = () => {
+        number.innerHTML = "loading...";
+        //setInterval--------------------------
+        reference = setInterval(() => {
+          number.innerHTML = `${num}`;
+          num++;
+        }, 500);
+      };
+      btn.addEventListener("click", myFunction);
+      //clearInterval()----------------------
+      btn1.addEventListener("click", () => {
+        clearInterval(reference);
+      });
+
+      // Add- clock-----------
+      setInterval(() => {
+        let t = new Date().toLocaleTimeString();
+        document.getElementById("time").innerHTML = t;
+      });
+    </script>
+  </body>
+</html>
