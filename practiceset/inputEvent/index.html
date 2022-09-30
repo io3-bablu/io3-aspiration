@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Event</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: bisque;
+
+        display: flex;
+      }
+      div {
+        width: 600px;
+        height: 8rem;
+        position: relative;
+        background-color: azure;
+        top: 10rem;
+        font-size: x-large;
+        text-align: center;
+        margin: auto;
+      }
+      p {
+        color: rgb(56, 95, 236);
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label for="">Your Name &nbsp; &#128073;</label>
+      <input type="text" name="" id="name" />
+      <br />
+      <label for=""
+        >Choose your ice cream flavor &#128525;;
+        <select name="iceCream" id="flavor">
+          <option value="">select one</option>
+          <option value="chocolate">chocolate</option>
+          <option value="vanilla">vanilla</option>
+          <option value="strawberry">strawberry</option>
+        </select>
+      </label>
+      <p id="result"></p>
+    </div>
+
+    <script>
+      //   const selectFlavor = () => {
+      //     const name = document.getElementById("name").value;
+      //     const flavor = document.getElementById("flavor").value;
+      //     document.getElementById(
+      //       "result"
+      //     ).innerHTML = `${name} you select ${flavor} &#127846; flavor `;
+      //   };
+      const sFlavor = document.getElementById("flavor");
+      sFlavor.addEventListener("change", () => {
+        const name = document.getElementById("name").value;
+        const flavor = document.getElementById("flavor").value;
+        const result = document.getElementById("result");
+        result.innerHTML = `hi ${name} you select ${flavor} &#127846; flavor`;
+      });
+    </script>
+  </body>
+</html>
