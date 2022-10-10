@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>turn the light on</title>
+    <style>
+      body {
+        display: flex;
+      }
+      .container {
+        border-radius: 20px;
+        padding: 2rem;
+        margin: auto;
+        width: fit-content;
+        text-align: center;
+        background-color: bisque;
+      }
+      button {
+        width: 120px;
+        height: 30px;
+        border-radius: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Can You Please Turn The Light On</h1>
+      <br />
+      <div class="img-div">
+        <img
+          class="img"
+          src="./images/light-bulb-off-png-115539402943y50vxr5yi.png"
+          alt="light-off"
+          width="150px"
+          height="150px"
+        />
+        <br />
+        <button
+          onclick="document.querySelector('.img').src='./images/light-bulb-on-png-11553940319kdxsp3rf0i.png'"
+        >
+          turn on light
+        </button>
+        <button
+          onclick="document.querySelector('.img').src='./images/light-bulb-off-png-115539402943y50vxr5yi.png'"
+        >
+          turn off light
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

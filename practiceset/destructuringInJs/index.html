@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>destructuring</title>
+  </head>
+  <body>
+    <h1>hello javascript</h1>
+    <script>
+      //-----------------destructuring array-------------
+      const array = ["bobby", "rahul", "vinay", "ravi", "sunil", 27];
+
+      //   let [myName, name2, name3, name4, name5, age] = array;
+
+      //   document.write(`my name is ${myName} and age is ${age}`);
+
+      //you can add value too-------------------
+
+      //   let [myName, name2, name3, name4, name5, age, workAs = "manager"] = array;
+
+      //   document.write(
+      //     `my name is ${myName} and age is ${age} im working as a ${workAs}`
+      //   );
+      //------------------object destructuring-----------------
+      const myObject = {
+        name: "bablu",
+        age: 27,
+        DOB: "30-12-1994",
+      };
+      let { name, age, DOB, workAs = "manager" } = myObject;
+      document.write(`${name} work as ${workAs}`);
+    </script>
+  </body>
+</html>

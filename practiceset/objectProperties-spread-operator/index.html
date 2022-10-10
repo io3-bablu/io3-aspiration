@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object properties and spread operator</title>
+  </head>
+  <body>
+    <h1>hello world</h1>
+    <script>
+      //**object properties**
+      //use of dynamic properties
+      let name = "bobby";
+      const myBio = {
+        [name]: "is my name",
+        [20 + 6]: "is my age",
+      };
+      console.log(myBio);
+      //if key and value both are same then no need to write both. you can write only one  --of them
+      //----------------------example---------------------
+      let myName = "aayat";
+      let age = 2;
+      const myBioData = { myName, age };
+      console.log(myBioData);
+      document.write(
+        `my name is ${myBioData.myName} and age is ${myBioData.age} years`
+      );
+      //****spread operator****
+      const arrayName = ["red", "blue", "yellow", "brown"];
+      const myColors = [
+        "red",
+        "blue",
+        "yellow",
+        "brown",
+        "white",
+        "green",
+        "black",
+      ];
+      //spread operator** you can add value of an array into another array with *spread operator* [...arrayName]
+      const myFavColors = [...arrayName, "white", "green", "black"];
+      console.log(myFavColors);
+      console.log(myColors);
+    </script>
+  </body>
+</html>

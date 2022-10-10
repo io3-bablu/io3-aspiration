@@ -1,4 +1,4 @@
-//2nd way fo wright function
+//2nd way to wright function
 const callingFunction = () => {
   alert("most common way to wright function");
 };

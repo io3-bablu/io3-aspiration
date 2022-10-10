@@ -127,6 +127,7 @@ console.log("8th point is done");
 const a5 = [5, 12, 8, 130, 44];
 const qus9 = a5
   .map((elem) => elem * 2)
+  .map((elem) => Math.sqrt(elem))
   .reduce((accumulator, elem) => accumulator + elem);
 console.log(qus9);
 //9th point done--------------------------------

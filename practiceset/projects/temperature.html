@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>temperature</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"
+    />
+    <style>
+      body {
+        padding-top: 5rem;
+        display: flex;
+      }
+      .container {
+        margin: auto;
+        padding: 1rem 2rem 1rem 2rem;
+        width: fit-content;
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Thermometer <span id="temp"></span></h1>
+    </div>
+    <script>
+      const funTemp = () => {
+        const temp = document.getElementById("temp");
+        temp.innerHTML = "&#xf18d; ";
+        setTimeout(() => {
+          temp.innerHTML = "&#127777;";
+          temp.style.color = "red";
+          setTimeout(() => {
+            temp.innerHTML = "&#x1F34F; ";
+            setTimeout(() => {
+              temp.innerHTML = "&#xF16;";
+              temp.style.color = "green";
+            }, 1000);
+          }, 1000);
+        }, 1000);
+      };
+      setInterval(funTemp, 4000);
+      funTemp();
+    </script>
+  </body>
+</html>

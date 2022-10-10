@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    hello java
+    <br />
+    <script>
+      //---------------***object oriented javascript***-------
+      //--------------*what is object literal*------
+      // object literal is simply a key:value pair data structure.
+      // its store variables , function together in one container
+      // how create object?
+      // 1 way of create object
+      // let bioData = {
+      //   name: "bobby",
+      //   age: 28,
+      //   getData: function () {
+      //     document.write(
+      //       `my name is ${bioData.name} and agr is ${bioData.age}`
+      //     );
+      //   },
+      // };
+      // bioData.getData();
+      //2 way of create object
+      //   let bioData = {
+      //     name: "bobby",
+      //     age: 28,
+      //     getData() {
+      //       document.write(
+      //         `my name is ${bioData.name} and agr is ${bioData.age}`
+      //       );
+      //     },
+      //   };
+      //   bioData.getData();
+      // we also contain object as a value in object--------
+      //3rd way-----------------------------
+      //   let bioData = {
+      //     fruitsColor: { apple: "red", banana: "yellow", grapes: "green" },
+      //     name: "bobby",
+      //     age: 28,
+      //     getData() {
+      //       document.write(
+      //         `my name is ${bioData.name} and agr is ${bioData.age}`
+      //       );
+      //     },
+      //   };
+      //   bioData.getData();
+      //   document.write(`-------------------`);
+      //   document.write(
+      //     `${bioData.fruitsColor.banana} ${bioData.fruitsColor.apple} ${bioData.fruitsColor.grapes}`
+      //   );
+      // -----------------*this object*---------------
+
+      // *This*  it contain the current context----------------
+      //the this object can different values depending on where it is placed-----
+      //--------------------for example------------------------
+
+      //   document.write(this);
+
+      //it refer to the current context and that is window global object---
+      //-------------------example 2---------------
+      //   const name = () => {
+      //     document.write(this.alert("awesome"));
+      //   };
+      //   name();
+      // again its current context is global object (window)
+      // ----------------------example 3-------------------------
+      let Name = "bobby";
+      function myName() {
+        console.log(this.name);
+      }
+      myName();
+      // again its current context is global object (window)
+      // ----------------------example 4-------------------------
+      //   let bioData = {
+      //     name: "bobby",
+      //     age: 28,
+      //     myName() {
+      //       console.log(this);
+      //     },
+      //   };
+      //   bioData.myName();
+      //now this time it's current context is (bioData) object because it's placed in it----
+      // -----------------example 5------------------------
+      // let bioData = {
+      //   name: "bobby",
+      //   age: 28,
+      //   myName: () => {
+      //     console.log(this);
+      //   },
+      // };
+      // bioData.myName();
+      // **this**--it's not work with fat arrow function
+      //----------------------Entries-----------
+      // its convert object into an array
+      // example
+      const rollNumber = { bobby: 1, aayat: 2, baby: 3, vinay: 4 };
+      const array9 = Object.entries(rollNumber);
+      console.log(array9);
+      //----------------------fromEntries-----------
+      // its convert array into an Object
+      // example
+      const aToO = Object.fromEntries(array9);
+      console.log(aToO);
+      // -------------------------bigInt-----------------------------
+      //you can't proforma any thing after this 9007199254740991 number
+
+      const num = Number.MAX_SAFE_INTEGER;
+      const newNum = 9007199254740991n + 20n;
+      console.log(newNum);
+
+      console.log(typeof newNum);
+      let array1 = [81, 16, 25, 9, 4];
+      const array = array1
+        .map((elem) => Math.sqrt(elem))
+        .map((elem) => elem * 2)
+        .filter((elem) => elem > 12);
+      console.log(array);
+    </script>
+  </body>
+</html>
