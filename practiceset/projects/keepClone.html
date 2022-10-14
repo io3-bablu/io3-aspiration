@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>google keep clone</title>
+    <style>
+      body {
+        background-color: bisque;
+      }
+      .hidden {
+        display: none;
+      }
+      .container {
+        background-color: bisque;
+        width: 100%;
+        height: auto;
+      }
+      .heading {
+        height: 2rem;
+        background-color: rgb(249, 225, 41);
+      }
+      .icon {
+        padding: 8px;
+      }
+      .addBtn {
+        position: absolute;
+        right: 9px;
+        top: 2.5rem;
+        border-radius: 20px;
+        color: bisque;
+        background-color: violet;
+        border: none;
+      }
+      .addBtn:hover {
+        background-color: bisque;
+        color: violet;
+        transform: scale(1.2);
+      }
+      .note {
+        margin-left: 5px;
+        margin-top: 2rem;
+        display: inline-block;
+        width: 19%;
+        height: 6rem;
+
+        background-color: #fff;
+      }
+      .edit {
+        background-color: #fff;
+        border: none;
+        margin-left: 72%;
+      }
+      .edit:hover {
+        transform: scale(1.1);
+      }
+      .delete {
+        background-color: #fff;
+        border: none;
+      }
+      .delete:hover {
+        transform: scale(1.1);
+      }
+      #text,
+      .main {
+        width: 98%;
+        height: 80%;
+        border: none;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <i class="fa-regular fa-note-sticky icon"></i>
+        Keep Google Clone
+      </div>
+      <!-- heading ends here-->
+      <div class="dibBtn">
+        <button class="addBtn" id="addBtn">
+          Add Note
+          <span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </button>
+      </div>
+      <!-- add btn end here -->
+      <!-- <div class="note">
+        <div class="noteBtn">
+          <button class="edit">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </button>
+          <button class="delete">
+            <i class="fa-solid fa-trash-can"></i>
+          </button>
+        </div>
+        <div class="main"></div>
+        <textarea class="" id="text"></textarea>
+      </div> -->
+      <!-- note end here -->
+    </div>
+    <script>
+      // add data in local Storage=========
+      const updateLsData = () => {
+        const textareaData = document.querySelectorAll("textarea");
+        let notes = [];
+        textareaData.forEach((note) => notes.push(note.value));
+
+        localStorage.setItem("notes", JSON.stringify(notes));
+      };
+      //==========================
+      const addBtn = document.querySelector(".addBtn");
+      const addNote = (text = "") => {
+        const note = document.createElement("div");
+        note.classList.add("note");
+        const htmlData = ` <div class="noteBtn">
+          <button class="edit">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </button>
+          <button class="delete">
+            <i class="fa-solid fa-trash-can"></i>
+          </button>
+        </div>
+        <div class="main ${text ? "" : "hidden"}"></div>
+        <textarea class="${text ? "hidden" : ""}" id="text"></textarea>`;
+        note.insertAdjacentHTML("afterbegin", htmlData);
+        const deleteBtn = note.querySelector(".delete");
+        const editBtn = note.querySelector(".edit");
+        const mainDiv = note.querySelector(".main");
+        const textarea = note.querySelector("textarea");
+
+        deleteBtn.addEventListener("click", () => {
+          note.remove();
+          updateLsData();
+        });
+        editBtn.addEventListener("click", () => {
+          mainDiv.classList.toggle("hidden");
+          textarea.classList.toggle("hidden");
+        });
+        textarea.addEventListener("change", (event) => {
+          const text = event.target.value;
+          mainDiv.innerHTML = text;
+          updateLsData();
+        });
+        document.body.appendChild(note);
+      };
+      // get data from local storage================
+      const notes = JSON.parse(localStorage.getItem("notes"));
+
+      if (notes) {
+        notes.forEach((data) => addNote(data));
+      }
+      //=======================
+      addBtn.addEventListener("click", () => addNote());
+    </script>
+  </body>
+</html>

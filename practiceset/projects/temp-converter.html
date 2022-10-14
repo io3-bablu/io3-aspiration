@@ -25,19 +25,18 @@
       const convertTemp = () => {
         const numTemp = document.getElementById("temp").value;
         const tempType = document.getElementById("temperature");
-        const tempIn = tempType.options[tempType.selectedIndex];
-
-        const celToFar = (cel) => {
-          const Fahrenheit = (cel * 9) / 5 + 32;
+        const tempIn = tempType.options[tempType.selectedIndex].value;
+        const celToFar = (numTemp) => {
+          const Fahrenheit = (numTemp * 9) / 5 + 32;
           return Fahrenheit;
         };
 
-        const fahToCel = (far) => {
-          const celsius = ((far - 32) * 5) / 9;
+        const fahToCel = (numTemp) => {
+          const celsius = ((numTemp - 32) * 5) / 9;
           return celsius;
         };
         let result;
-        if (tempIn == "°Celsius") {
+        if (tempIn == "cel") {
           result = celToFar(numTemp);
           document.getElementById(
             "resultContainer"

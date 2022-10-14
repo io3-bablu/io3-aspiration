@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>counter-increment</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <style>
+      .container {
+        position: relative;
+        width: 1000px;
+        height: 400px;
+        background-color: bisque;
+        text-align: center;
+      }
+      .counterCon1 {
+        position: absolute;
+        left: 16rem;
+        top: 7rem;
+      }
+      .counterCon2 {
+        position: absolute;
+        left: 26rem;
+        top: 7rem;
+      }
+      .counterCon3 {
+        position: absolute;
+        left: 36rem;
+        top: 7rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="counterCon1">
+        <i class="fa-solid fa-mug-hot"></i>
+        <div class="counter" data-target="4000"></div>
+        <span>complete projects</span>
+      </div>
+      <div class="counterCon2">
+        <i class="fa-solid fa-users"></i>
+        <div class="counter" data-target="1500"></div>
+        <span>our happy clients</span>
+      </div>
+      <div class="counterCon3">
+        <i class="fa-solid fa-list-check"></i>
+        <div class="counter" data-target="3000"></div>
+        <span>projects on work</span>
+      </div>
+    </div>
+    <script>
+      const counters = document.querySelectorAll(".counter");
+      counters.forEach((elem) => {
+        elem.innerHTML = 0;
+        const myFun = () => {
+          const startNum = Number(elem.innerHTML);
+          const targetNum = +elem.getAttribute("data-target");
+          const incrNum = targetNum / 100;
+          if (targetNum > startNum) {
+            elem.innerHTML = startNum + incrNum;
+            setTimeout(myFun, 10);
+          } else {
+            elem.innerHTML = targetNum;
+          }
+        };
+        myFun();
+      });
+      // https://api.covid19india.org/state_district_wise.json ===api===
+    </script>
+  </body>
+</html>
